@@ -5,7 +5,9 @@
 
 <Navbar />
 
-<slot />
+<div class="prose mx-2 my-2 md:my-8 md:mx-auto lg:w-1/2 text-lg leading-12">
+	<slot />
+</div>
 
 <p class="my-4 text-xs text-center text-gray-400">
 	<span>© 2020 All rights reserved.</span>
