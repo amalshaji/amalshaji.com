@@ -5,7 +5,7 @@
 
 <Navbar />
 
-<div class="prose mx-2 my-2 md:my-8 md:mx-auto lg:w-1/2 text-lg leading-12">
+<div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-1/2 text-lg leading-12">
 	<slot />
 </div>
 
