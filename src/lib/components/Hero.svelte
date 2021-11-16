@@ -11,7 +11,7 @@
 						I love working with Python, Go and Svelte. Once in a while, I try to experiment on
 						something and document my journey here. Lately I'm into Rust and Solana.
 						<br />
-						Building this website is one of my latest hobbies. It is built using Sveltekit and TailwindCSS.
+						Building this website using Sveltekit and tailwindCSS is one of my latest side projects.
 					</p>
 					<div class="text-center">
 						<a

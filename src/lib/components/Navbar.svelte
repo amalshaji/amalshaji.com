@@ -137,13 +137,15 @@
 </nav>
 
 <div
-	class="{isopen ? 'block' : 'hidden'} navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50"
+	class="{isopen
+		? 'block'
+		: 'hidden'} opacity-95  navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50"
 >
 	<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
 	<nav class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto">
 		<div class="flex items-center mb-8">
 			<a class="mr-auto text-3xl font-bold leading-none" href="/">
-				<img class="h-10" src="/images/logo.png" alt="" width="auto" />
+				<img class="h-12" src="/images/logo.png" alt="" width="auto" />
 			</a>
 			<button class="navbar-close" on:click={() => (isopen = false)}>
 				<svg
