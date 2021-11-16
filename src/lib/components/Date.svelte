@@ -17,9 +17,7 @@
 		'December'
 	];
 
-	let parsed = `${days[a.getUTCDay()]}, ${
-		months[a.getMonth()]
-	}, ${a.getDate()}, ${a.getFullYear()}`;
+	let parsed = `${days[a.getUTCDay()]}, ${months[a.getMonth()]} ${a.getDate()}, ${a.getFullYear()}`;
 </script>
 
 {parsed}

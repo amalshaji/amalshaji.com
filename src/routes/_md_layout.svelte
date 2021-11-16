@@ -1,7 +1,7 @@
 <script>
 	import Seo from '$lib/components/SEO.svelte';
 	import Date from '$lib/components/Date.svelte';
-	export let title, summary, image, date;
+	export let title, summary, image, date, tags;
 </script>
 
 <svelte:head>
@@ -12,6 +12,9 @@
 	<div class="text-center">
 		<p><Date {date} /></p>
 		<h1>{title}</h1>
+		{#each tags as tag}
+			<a class="mx-1 my-1" href={`/tags/${tag}`}>{tag.toUpperCase()}</a>
+		{/each}
 	</div>
 
 	{#if image}

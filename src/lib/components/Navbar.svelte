@@ -75,6 +75,30 @@
 		</li>
 		<li>
 			<a
+				class="{path.startsWith('/tags')
+					? 'font-semibold text-green-500'
+					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
+				href="/tags">Tags</a
+			>
+		</li>
+		<li class="text-gray-200">
+			<svg
+				class="w-4 h-4 current-fill"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+				/>
+			</svg>
+		</li>
+		<li>
+			<a
 				class="{path == '/projects'
 					? 'font-semibold text-green-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
@@ -107,7 +131,7 @@
 		</li>
 	</ul>
 	<a
-		class="hidden lg:block py-2 px-6 bg-white hover:bg-green-200 hover:text-black text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+		class="hidden lg:block py-2 px-6 bg-white hover:border hover:text-black text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
 		href="mailto:amalshajid@gmail.com">Contact</a
 	>
 </nav>
@@ -150,6 +174,12 @@
 					<a
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/blog">Blog</a
+					>
+				</li>
+				<li class="mb-1">
+					<a
+						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
+						href="/tags">Tags</a
 					>
 				</li>
 				<li class="mb-1">
