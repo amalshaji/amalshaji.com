@@ -36,5 +36,8 @@ export async function get({ query }) {
     return {
         status: 200,
         body: feed,
+        headers: {
+            'Content-Type': 'application/rss+xml',
+        }
     }
 }
