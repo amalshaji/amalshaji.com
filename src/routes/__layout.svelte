@@ -1,6 +1,12 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import { prefetchRoutes } from '$app/navigation';
+	import { browser } from '$app/env';
+
+	if (browser) {
+		prefetchRoutes();
+	}
 </script>
 
 <Navbar />
