@@ -1,18 +1,7 @@
-<script>
-	import '../../app.css';
-	import Navbar from '$lib/components/Navbar.svelte';
-</script>
-
-<Navbar />
-
-<div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
-	<slot />
-</div>
-
-<p class="my-4 text-xs text-center text-gray-400">
-	<span>© 2020 All rights reserved.</span>
-</p>
-<div class="text-center">
+<div class="text-center my-8">
+	<p class="my-4 text-xs text-center text-gray-400">
+		<span>Amal Shaji © 2021.</span>
+	</p>
 	<a class="inline-block px-1" href="https://twitter.com/pydantic">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

@@ -26,13 +26,16 @@
 
 <Seo title="Posts by Amal" url="https://amalshajid.netlify.app/blog" />
 
-<h1>All posts</h1>
+<div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
+	<h1>All posts</h1>
 
-<ul>
-	{#each posts as post}
-		<li>
-			<a href={`/blog/${post.path.replace('.md', '').replace('.svx', '')}`}>{post.metadata.title}</a
-			>
-		</li>
-	{/each}
-</ul>
+	<ul>
+		{#each posts as post}
+			<li>
+				<a href={`/blog/${post.path.replace('.md', '').replace('.svx', '')}`}
+					>{post.metadata.title}</a
+				>
+			</li>
+		{/each}
+	</ul>
+</div>
