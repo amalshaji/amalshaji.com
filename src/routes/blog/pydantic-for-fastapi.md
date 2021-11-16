@@ -267,7 +267,3 @@ class User(BaseModel):
     username: str = Field(..., example="amal")
     password: str = Field(..., example="amal")
 ```
-
-## Conclusion
-
-Pydantic is an amazing tool for data validation. FastAPI uses pydantic to help build better APIs. For more amazing features of pydantic, read the [official documentation](https://pydantic-docs.helpmanual.io/).
