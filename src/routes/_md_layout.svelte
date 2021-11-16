@@ -1,9 +1,12 @@
 <script>
 	import Seo from '$lib/components/SEO.svelte';
 	import Date from '$lib/components/Date.svelte';
-	export let title, summary, image, date, tags;
 	import { page } from '$app/stores';
 	import Waypoint from 'svelte-waypoint';
+
+	export let title, summary, image, date, tags;
+
+	import '../../static/code.css';
 </script>
 
 <svelte:head>
