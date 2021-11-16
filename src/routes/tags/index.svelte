@@ -39,8 +39,13 @@
 </svelte:head>
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
-	<div class="text-2xl md:text-4xl font-semibold my-4">All Tags</div>
-	{#each Object.entries(tagMap) as [tag, count]}
-		<a class="mx-1" href={`/tags/${tag}`}>{`${tag.toUpperCase()} - (${count})`}</a>
-	{/each}
+	<div class="text-2xl md:text-4xl font-semibold my-4 ">All Tags</div>
+	<div class="flex flex-wrap">
+		{#each Object.entries(tagMap) as [tag, count]}
+			<div class="mx-2">
+				<a href={`/tags/${tag}`}>{`${tag.toUpperCase()}`}</a>
+				<span class="text-sm">({count})</span>
+			</div>
+		{/each}
+	</div>
 </div>

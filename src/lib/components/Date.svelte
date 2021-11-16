@@ -20,4 +20,4 @@
 	let parsed = `${days[a.getUTCDay()]}, ${months[a.getMonth()]} ${a.getDate()}, ${a.getFullYear()}`;
 </script>
 
-{parsed}
+<time datetime={date}>{parsed}</time>

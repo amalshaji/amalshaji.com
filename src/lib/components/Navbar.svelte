@@ -28,7 +28,7 @@
 		<li>
 			<a
 				class="{path == '/'
-					? 'font-semibold text-green-500'
+					? 'font-semibold text-yellow-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/">Home</a
 			>
@@ -52,7 +52,7 @@
 		<li>
 			<a
 				class="{path.startsWith('/blog')
-					? 'font-semibold text-green-500'
+					? 'font-semibold text-yellow-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/blog">Blog</a
 			>
@@ -76,7 +76,7 @@
 		<li>
 			<a
 				class="{path.startsWith('/tags')
-					? 'font-semibold text-green-500'
+					? 'font-semibold text-yellow-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/tags">Tags</a
 			>
@@ -100,7 +100,7 @@
 		<li>
 			<a
 				class="{path == '/projects'
-					? 'font-semibold text-green-500'
+					? 'font-semibold text-yellow-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/projects">Projects</a
 			>
@@ -124,7 +124,7 @@
 		<li>
 			<a
 				class="{path == '/about'
-					? 'font-semibold text-green-500'
+					? 'font-semibold text-yellow-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/about">About</a
 			>

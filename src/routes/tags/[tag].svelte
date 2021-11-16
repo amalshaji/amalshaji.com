@@ -29,21 +29,53 @@
 <script>
 	export let filteredPosts, tag;
 	import Seo from '$lib/components/SEO.svelte';
+	import Date from '$lib/components/Date.svelte';
 </script>
 
 <svelte:head>
 	<Seo title={`Posts on ${tag.toUpperCase()} by Amal`} url={`/tags/${tag}`} />
 </svelte:head>
 
-<div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
-	<h1>All posts on <code>{tag.toUpperCase()}</code></h1>
-
+<div class="mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
+	<div class="text-2xl md:text-4xl font-semibold my-4">
+		All posts on <span class="font-sans text-primary-700">{tag.toUpperCase()}</span>
+	</div>
+	<input
+		type="text"
+		class="px-4 w-full md:w-1/2 my-8 border border-gray-400 focus:border-yellow-500 rounded-lg"
+		placeholder="Search articles"
+	/>
 	<ul>
 		{#each filteredPosts as post}
-			<li>
-				<a href={`/blog/${post.path.replace('.md', '').replace('.svx', '')}`}
-					>{post.metadata.title}</a
-				>
+			<li class="my-2 py-2">
+				<article class="space-y-2 lg:grid lg:grid-cols-4 lg:space-y-0 lg:items-baseline">
+					<dl>
+						<dt class="sr-only">Published on</dt>
+						<dd class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+							<Date date={post.metadata.date} />
+						</dd>
+					</dl>
+					<div class="space-y-3 lg:col-span-3">
+						<div>
+							<h3 class="text-2xl font-bold leading-8 tracking-tight">
+								<a
+									href={`/blog/${post.path.replace('.md', '').replace('.svx', '')}`}
+									class="text-gray-900 dark:text-gray-100"
+								>
+									{post.metadata.title}
+								</a>
+							</h3>
+							<div class="flex flex-wrap prose">
+								{#each post.metadata.tags as tag}
+									<a class="mx-1" href={`/tags/${tag}`}>{tag.toUpperCase()}</a>
+								{/each}
+							</div>
+						</div>
+						<div class="prose text-gray-500 max-w-none dark:text-gray-400">
+							{post.metadata.summary}
+						</div>
+					</div>
+				</article>
 			</li>
 		{/each}
 	</ul>
