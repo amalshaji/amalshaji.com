@@ -4,7 +4,7 @@
 	let isopen = false;
 </script>
 
-<nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50">
+<nav class="relative px-6 py-6 flex justify-between items-center">
 	<a class=" text-3xl font-bold leading-none" href="/">
 		<img class="h-12" src="/images/logo.png" alt="" width="auto" />
 	</a>
@@ -29,7 +29,7 @@
 			<a
 				class="{path == '/'
 					? 'font-semibold text-green-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500"
+					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/">Home</a
 			>
 		</li>
@@ -53,7 +53,7 @@
 			<a
 				class="{path.startsWith('/blog')
 					? 'font-semibold text-green-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500"
+					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/blog">Blog</a
 			>
 		</li>
@@ -77,7 +77,7 @@
 			<a
 				class="{path == '/projects'
 					? 'font-semibold text-green-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500"
+					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/projects">Projects</a
 			>
 		</li>
@@ -101,7 +101,7 @@
 			<a
 				class="{path == '/about'
 					? 'font-semibold text-green-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500"
+					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/about">About</a
 			>
 		</li>

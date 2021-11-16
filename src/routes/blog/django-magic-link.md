@@ -4,9 +4,24 @@ date: '2021-11-14'
 tags: ['magic link', 'auth', 'django', 'redis']
 draft: false
 summary: Learn how magic link authentication work by building one
-images: '/static/images/magic.png'
+image: '/images/magic.png'
 ---
 
+<script>
+    import Seo from '$lib/components/SEO.svelte';
+    import Date from '$lib/components/Date.svelte';
+</script>
+
+<svelte:head>
+    <Seo title={title} description={summary} image={image}></Seo>
+</svelte:head>
+
+<div class="text-center">
+    <p><Date date={date}></Date></p>
+    <h1>{title}</h1>
+</div>
+
+<img src={image}>
 
 Magic link authentication is where the user is sent an email with a secure link. Once the user clicks the link, the application logs the user in. Magic link is a smart way to authenticate users because it takes away the need to set and remember a strong password.
 
