@@ -2,13 +2,16 @@ import fs from 'fs'
 import fg from 'fast-glob'
 import parseMarkdown from "front-matter-markdown"
 
+
 const generate_feed = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <atom:link href="http://v2.amalshaji.com/feed.xml" rel="self" type="application/rss+xml" />
 <title>Amal Shaji</title>
 <link>https://v2.amalshaji.com</link>
-<description>My weird experiments</description>
+<description>I write about what I learn. Currently exploring Python, Go and Svelte</description>
+<language>en-us</language>
+<lastBuildDate>${new Date().toDateString()}</lastBuildDate>
 ${posts
         .map(
             (post) => `<item>
@@ -17,6 +20,10 @@ ${posts
 <link>https://v2.amalshaji.com/${post.path}</link>
 <description>${post.metadata.summary}</description>
 <pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
+<author>amalshajid@gmail.com (Amal Shaji)</author>
+${post.metadata.tags.map(
+                (tag) => `<category>${tag}</category>`
+            ).join('')}
 </item>`
         )
         .join('')}
