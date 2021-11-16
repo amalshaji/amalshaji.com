@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<atom:link href="http://v2.amalshaji.com/feed.xml" rel="self" type="application/rss+xml" />
+<title>Amal Shaji</title>
+<link>https://v2.amalshaji.com</link>
+<description>My weird experiments</description>
+<item>
+<guid>https://v2.amalshaji.com/blog/deploying-sapper-to-deta</guid>
+<title>Deploying Sapper To Deta.sh</title>
+<link>https://v2.amalshaji.com//blog/deploying-sapper-to-deta</link>
+<description>You get free cloud, SSR and PWA. What else do you need?</description>
+<pubDate>Fri, 03 Sep 2021 00:00:00 GMT</pubDate>
+</item><item>
+<guid>https://v2.amalshaji.com/blog/django-magic-link</guid>
+<title>Django Magic Link Authentication</title>
+<link>https://v2.amalshaji.com//blog/django-magic-link</link>
+<description>Learn how magic link authentication work by building one</description>
+<pubDate>Sun, 14 Nov 2021 00:00:00 GMT</pubDate>
+</item><item>
+<guid>https://v2.amalshaji.com/blog/fastapi-ormar-alembic</guid>
+<title>Setting Up FastAPI, Ormar And Alembic</title>
+<link>https://v2.amalshaji.com//blog/fastapi-ormar-alembic</link>
+<description>Learn how to setup a mini async ORM with migrations for your next FastAPI project.</description>
+<pubDate>Sat, 14 Aug 2021 00:00:00 GMT</pubDate>
+</item><item>
+<guid>https://v2.amalshaji.com/blog/pydantic-for-fastapi</guid>
+<title>Pydantic For FastAPI</title>
+<link>https://v2.amalshaji.com//blog/pydantic-for-fastapi</link>
+<description>Check out the pydantic features with examples that makes your fastapi application better</description>
+<pubDate>Mon, 07 Jun 2021 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
