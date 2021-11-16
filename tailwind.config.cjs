@@ -59,6 +59,7 @@ const config = {
 							paddingTop: '2px',
 							paddingBottom: '2px',
 							borderRadius: '0.25rem',
+							wordWrap: 'break-word',
 						},
 						'code:before': {
 							content: 'none',
