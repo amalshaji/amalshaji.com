@@ -52,7 +52,7 @@
 		</li>
 		<li>
 			<a
-				class="{path == '/blog'
+				class="{path.startsWith('/blog')
 					? 'font-semibold text-green-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500"
 				href="/blog">Blog</a

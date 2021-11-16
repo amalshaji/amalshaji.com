@@ -21,7 +21,10 @@
 
 <script>
 	export let posts;
+	import Seo from '$lib/components/SEO.svelte';
 </script>
+
+<Seo title="Posts by Amal" url="https://amalshajid.netlify.app/blog" />
 
 <h1>All posts</h1>
 

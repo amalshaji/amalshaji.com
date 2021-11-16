@@ -1,35 +1,29 @@
 <section class="skewed-bottom-right">
 	<div class="bg-gray-50 pt-20 pb-20 radius-for-skewed">
 		<div class="container mx-auto px-4">
-			<div class="flex flex-wrap -mx-4">
-				<div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
-					<div class="w-full text-center lg:text-left">
-						<div class="max-w-md mx-auto lg:mx-0">
-							<h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading">
-								<span>Hello 👋</span>
-								<span class="text-purple-600">I'm Amal</span>
-							</h2>
-						</div>
-						<div class="max-w-sm mx-auto lg:mx-0">
-							<p class="mb-6 text-gray-400 leading-loose">
-								I love working with Python, Go and Svelte. Once in a while, I try to experiment on
-								something and document my journey here. Lately I'm into Rust and Solana.
-							</p>
-							<div>
-								<a
-									class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
-									href="/blog">Blog</a
-								><a
-									class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
-									href="/projects">Projects</a
-								>
-							</div>
-						</div>
+			<div class="w-full px-4 mb-12 md:mb-20 mx-auto lg:mb-0 flex flex-col items-center">
+				<h2 class="mb-4 text-4xl lg:text-5xl font-bold mx-auto font-heading">
+					<span>Hello 👋</span>
+					<span class="text-purple-600">I'm Amal</span>
+				</h2>
+				<div class="max-w-md mx-1 lg:mx-0">
+					<p class="mb-6 text-gray-400 leading-loose">
+						I love working with Python, Go and Svelte. Once in a while, I try to experiment on
+						something and document my journey here. Lately I'm into Rust and Solana.
+					</p>
+					<div class="text-center">
+						<a
+							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+							href="/blog">Blog</a
+						><a
+							class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
+							href="/projects">Projects</a
+						>
 					</div>
 				</div>
-				<div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
+				<!-- <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
 					<img src="/images/man.png" alt="" />
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
