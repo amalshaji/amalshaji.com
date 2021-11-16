@@ -3,6 +3,7 @@
 	import Date from '$lib/components/Date.svelte';
 	export let title, summary, image, date, tags;
 	import { page } from '$app/stores';
+	import Waypoint from 'svelte-waypoint';
 </script>
 
 <svelte:head>
@@ -13,15 +14,17 @@
 	<div class="text-center">
 		<p><Date {date} /></p>
 		<h1 class="prose-primary">{title}</h1>
-		<div class="flex text-sm sm:text-md flex-wrap mx-auto">
+		<div class="flex text-sm sm:text-md flex-wrap text-center">
 			{#each tags as tag}
-				<a class="mx-1 my-1" href={`/tags/${tag}`}>{tag.toUpperCase()}</a>
+				<a class="mx-1 my-1" href={`/tags/${tag}`}>#{tag.toUpperCase()}</a>
 			{/each}
 		</div>
 	</div>
 
 	{#if image}
-		<img src={image} alt={title} />
+		<Waypoint throttle="500" offset="200">
+			<img src={image} alt={title} />
+		</Waypoint>
 	{/if}
 
 	<slot />
