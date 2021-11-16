@@ -1,3 +1,9 @@
+<script>
+	import Seo from '$lib/components/SEO.svelte';
+</script>
+
+<Seo />
+
 <section class="py-20 bg-gray-50">
 	<div class="container mx-auto px-4">
 		<div class="max-w-xl mx-auto">

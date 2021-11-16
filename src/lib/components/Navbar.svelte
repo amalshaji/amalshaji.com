@@ -166,30 +166,35 @@
 			<ul>
 				<li class="mb-1">
 					<a
+						on:click={() => (isopen = false)}
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/">Home</a
 					>
 				</li>
 				<li class="mb-1">
 					<a
+						on:click={() => (isopen = false)}
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/blog">Blog</a
 					>
 				</li>
 				<li class="mb-1">
 					<a
+						on:click={() => (isopen = false)}
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/tags">Tags</a
 					>
 				</li>
 				<li class="mb-1">
 					<a
+						on:click={() => (isopen = false)}
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/projects">Projects</a
 					>
 				</li>
 				<li class="mb-1">
 					<a
+						on:click={() => (isopen = false)}
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/about">About</a
 					>

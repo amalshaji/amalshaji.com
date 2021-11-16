@@ -16,7 +16,7 @@
 		const filteredPosts = posts.filter((post) => {
 			return post.metadata.tags.includes(tag);
 		});
-
+		filteredPosts.sort((a, b) => (a.metadata.date > b.metadata.date ? -1 : 1));
 		return {
 			props: {
 				filteredPosts,
@@ -31,7 +31,7 @@
 	import Seo from '$lib/components/SEO.svelte';
 </script>
 
-<Seo title={`Posts on ${tag} by Amal`} url="https://amalshajid.netlify.app/tag" />
+<Seo title={`Posts on ${tag.toUpperCase()} by Amal`} url={`/tags/${tag}`} />
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
 	<h1>All posts on <code>{tag.toUpperCase()}</code></h1>

@@ -11,6 +11,7 @@
 	}
 	export const load = async () => {
 		const posts = await Promise.all(body);
+		posts.sort((a, b) => (a.metadata.date > b.metadata.date ? -1 : 1));
 		return {
 			props: {
 				posts
@@ -24,7 +25,7 @@
 	import Seo from '$lib/components/SEO.svelte';
 </script>
 
-<Seo title="Posts by Amal" url="https://amalshajid.netlify.app/blog" />
+<Seo title="Blog | Amal Shaji" url="/blog" />
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
 	<div class="text-2xl md:text-4xl font-semibold my-4">All posts</div>

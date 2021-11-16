@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<Seo title="About Amal" url="https://amalshajid.netlify.app/about" />
+	<Seo title="Amal Shaji" url="/about" />
 </svelte:head>
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">

@@ -2,10 +2,11 @@
 	import Seo from '$lib/components/SEO.svelte';
 	import Date from '$lib/components/Date.svelte';
 	export let title, summary, image, date, tags;
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>
-	<Seo {title} description={summary} {image} />
+	<Seo {title} description={summary} {image} url={$page.path} />
 </svelte:head>
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
