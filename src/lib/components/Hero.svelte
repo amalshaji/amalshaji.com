@@ -15,7 +15,7 @@
 					</p>
 					<div class="text-center">
 						<a
-							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-yellow-300 hover:bg-yellow-400 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-yellow-600 hover:bg-yellow-500 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
 							href="/blog">Blog</a
 						><a
 							class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 hover:border rounded-l-xl rounded-t-xl transition duration-200"
