@@ -45,7 +45,7 @@
 			<a
 				class="{path == '/'
 					? 'font-semibold text-yellow-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/">Home</a
 			>
 		</li>
@@ -69,7 +69,7 @@
 			<a
 				class="{path.startsWith('/blog')
 					? 'font-semibold text-yellow-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/blog">Blog</a
 			>
 		</li>
@@ -93,7 +93,7 @@
 			<a
 				class="{path.startsWith('/tags')
 					? 'font-semibold text-yellow-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/tags">Tags</a
 			>
 		</li>
@@ -117,7 +117,7 @@
 			<a
 				class="{path == '/projects'
 					? 'font-semibold text-yellow-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/projects">Projects</a
 			>
 		</li>
@@ -141,20 +141,14 @@
 			<a
 				class="{path == '/about'
 					? 'font-semibold text-yellow-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 hover:border hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/about">About</a
 			>
 		</li>
 	</ul>
-	<div class="hidden lg:flex">
-		<button class=" mx-2 hidden lg:block" on:click={toggle_theme}>
-			<Theme theme={$theme} />
-		</button>
-		<a
-			class="hidden lg:block py-2 px-6 bg-gray-50 dark:bg-gray-900 dark:text-gray-400 hover:border hover:border-gray-700 hover:text-black text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl"
-			href="mailto:amalshajid@gmail.com">Contact</a
-		>
-	</div>
+	<button class=" mx-2 hidden lg:block" on:click={toggle_theme}>
+		<Theme theme={$theme} />
+	</button>
 </nav>
 
 <div
@@ -225,14 +219,6 @@
 					>
 				</li>
 			</ul>
-		</div>
-		<div class="mt-auto">
-			<div class="pt-6">
-				<a
-					class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
-					href="mailto:amalshajid@gmail.com">Contact</a
-				>
-			</div>
 		</div>
 	</nav>
 </div>
