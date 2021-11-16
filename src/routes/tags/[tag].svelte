@@ -31,7 +31,9 @@
 	import Seo from '$lib/components/SEO.svelte';
 </script>
 
-<Seo title={`Posts on ${tag.toUpperCase()} by Amal`} url={`/tags/${tag}`} />
+<svelte:head>
+	<Seo title={`Posts on ${tag.toUpperCase()} by Amal`} url={`/tags/${tag}`} />
+</svelte:head>
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
 	<h1>All posts on <code>{tag.toUpperCase()}</code></h1>

@@ -25,7 +25,9 @@
 	import Seo from '$lib/components/SEO.svelte';
 </script>
 
-<Seo title="Blog | Amal Shaji" url="/blog" />
+<svelte:head>
+	<Seo title="Blog | Amal Shaji" url="/blog" />
+</svelte:head>
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
 	<div class="text-2xl md:text-4xl font-semibold my-4">All posts</div>
