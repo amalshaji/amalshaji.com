@@ -21,7 +21,7 @@ const config = {
 		preprocess({
 			postcss: true
 		}),
-		mdsvex(mdsvexConfig)
+		mdsvex(mdsvexConfig),
 	]
 };
 

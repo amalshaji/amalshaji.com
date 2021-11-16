@@ -15,4 +15,5 @@
 <div class="mx-6 md:mx-auto text-lg leading-12">
 	<slot />
 </div>
+
 <Footer />

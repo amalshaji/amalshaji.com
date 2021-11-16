@@ -14,7 +14,6 @@ const config = {
 	smartypants: {
 		dashes: 'oldschool'
 	},
-
 	remarkPlugins: [remarkToc],
 	rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavious: 'wrap' }]]
 };

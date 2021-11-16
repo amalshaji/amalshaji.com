@@ -5,7 +5,7 @@
 </script>
 
 <nav
-	class="top-0 sticky z-999 backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
+	class="top-0 bg-gray-50 sticky z-999 backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
 >
 	<a class=" text-3xl font-bold leading-none" href="/">
 		<img class="h-12" src="/images/logo.png" alt="" width="auto" />
