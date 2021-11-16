@@ -116,7 +116,7 @@ const config = {
 						'h4,h5,h6': {
 							color: theme('colors.gray.100'),
 						},
-						code: {
+						'pre code': {
 							backgroundColor: theme('colors.gray.900'),
 						},
 						pre: {
