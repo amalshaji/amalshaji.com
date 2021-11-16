@@ -2,9 +2,16 @@
 	import { page } from '$app/stores';
 	import Theme from './Theme.svelte';
 	import { theme } from '$lib/store';
+	import { onMount } from 'svelte';
 
 	$: path = $page.path;
 	let isopen = false;
+
+	onMount(() => {
+		$theme = localStorage.getItem('amalshaji_com_theme') || 'light';
+		$theme = $theme == 'dark' ? 'light' : 'dark';
+		toggle_theme();
+	});
 
 	const toggle_theme = () => {
 		const current = $theme;
@@ -12,20 +19,22 @@
 		const doc_main = document.getElementById('doc_main');
 		doc_main.classList.remove(current);
 		doc_main.classList.add($theme);
+		localStorage.setItem('amalshaji_com_theme', $theme);
 	};
 </script>
 
 <nav
-	class="top-0 bg-gray-50 dark:bg-gray-800 sticky z-999 backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
+	class="top-0 bg-gray-50 dark:bg-gray-800 sticky backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
 >
-	<a class=" text-3xl font-bold leading-none" href="/">
-		<img class="h-12" src="/images/logo.png" alt="" width="auto" />
+	<a aria-label="Amal Shaji" class="text-3xl font-bold leading-none" href="/">
+		<img class="h-12" src="/images/logo.png" alt="Amal Shaji" width="auto" height="auto" />
 	</a>
 	<div class="lg:hidden flex">
-		<button class="p-3" on:click={toggle_theme}>
+		<button aria-label="theme switch" class="p-3" on:click={toggle_theme}>
 			<Theme theme={$theme} />
 		</button>
 		<button
+			aria-label="open navbar on mobile"
 			on:click={() => (isopen = !isopen)}
 			class="navbar-burger flex items-center text-gray-400 p-3"
 		>
@@ -146,7 +155,7 @@
 			>
 		</li>
 	</ul>
-	<button class=" mx-2 hidden lg:block" on:click={toggle_theme}>
+	<button aria-label="switch theme" class=" mx-2 hidden lg:block" on:click={toggle_theme}>
 		<Theme theme={$theme} />
 	</button>
 </nav>
@@ -161,8 +170,8 @@
 		class="relative flex flex-col py-6 px-6 h-full w-full bg-white dark:bg-gray-900 border-r overflow-y-auto"
 	>
 		<div class="flex items-center mb-8">
-			<a class="mr-auto text-3xl font-bold leading-none" href="/">
-				<img class="h-12" src="/images/logo.png" alt="" width="auto" />
+			<a class="mr-auto text-3xl font-bold leading-none" href="/" aria-label="Amal Shaji">
+				<img class="h-12" src="/images/logo.png" alt="Amal Shaji" width="auto" height="auto" />
 			</a>
 			<button class="navbar-close" on:click={() => (isopen = false)}>
 				<svg

@@ -1,8 +1,14 @@
 <div class="text-center my-8">
-	<p class="my-4 text-xs text-center text-gray-400">
+	<p class="my-4 text-xs text-center text-gray-900 dark:text-gray-50">
 		<span>Amal Shaji © 2021.</span>
 	</p>
-	<a class="inline-block px-1" href="mailto:amalshajid@gmail.com">
+	<a
+		aria-label="email address"
+		class="inline-block px-1"
+		target="_blank"
+		rel="noreferrer"
+		href="mailto:amalshajid@gmail.com"
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="16"
@@ -17,7 +23,13 @@
 			/>
 		</svg>
 	</a>
-	<a class="inline-block px-1" href="https://twitter.com/pydantic">
+	<a
+		aria-label="twitter link"
+		class="inline-block px-1"
+		target="_blank"
+		rel="noreferrer"
+		href="https://twitter.com/pydantic"
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="16"
@@ -31,7 +43,13 @@
 			/>
 		</svg>
 	</a>
-	<a class="inline-block px-1" href="https://github.com/amalshaji">
+	<a
+		aria-label="github link"
+		class="inline-block px-1"
+		target="_blank"
+		rel="noreferrer"
+		href="https://github.com/amalshaji"
+	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="16"
