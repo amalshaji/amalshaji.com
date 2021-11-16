@@ -3,10 +3,14 @@
 	import Date from '$lib/components/Date.svelte';
 	import { page } from '$app/stores';
 	import Waypoint from 'svelte-waypoint';
+	import '../../static/code.css';
+	import { onMount } from 'svelte';
 
 	export let title, summary, image, date, tags;
 
-	import '../../static/code.css';
+	onMount(() => {
+		window.scrollTo(0, 0);
+	});
 </script>
 
 <svelte:head>
