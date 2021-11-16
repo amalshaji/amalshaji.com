@@ -6,3 +6,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+pre {
+    border: 1px solid wheat;
+}

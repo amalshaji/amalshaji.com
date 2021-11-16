@@ -37,12 +37,12 @@
 </svelte:head>
 
 <div class="mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
-	<div class="text-2xl md:text-4xl font-semibold my-4">
+	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-50">
 		All posts on <span class="font-sans text-primary-700">{tag.toUpperCase()}</span>
 	</div>
 	<input
 		type="text"
-		class="px-4 w-full md:w-1/2 my-8 border border-gray-400 focus:border-yellow-500 rounded-lg"
+		class="px-4 w-full md:w-1/2 my-8 border border-gray-400 dark:border-gray-700 dark:text-gray-50 dark:bg-gray-800 focus:border-yellow-500 rounded-lg"
 		placeholder="Search articles"
 	/>
 	<ul>

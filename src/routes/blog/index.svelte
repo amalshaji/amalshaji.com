@@ -30,11 +30,11 @@
 	<Seo title="Blog | Amal Shaji" url="/blog" />
 </svelte:head>
 
-<div class="my-2 md:my-8 mx-auto lg:w-3/4">
-	<div class="text-2xl md:text-4xl font-semibold my-4">All posts</div>
+<div class="mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
+	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-50">All posts</div>
 	<input
 		type="text"
-		class="px-4 w-full md:w-1/2 my-8 border border-gray-400 focus:border-yellow-500 rounded-lg"
+		class="px-4 w-full md:w-1/2 my-8 border border-gray-400 dark:text-gray-50 dark:bg-gray-800 dark:focus:border-gray-50 dark:border-gray-500 focus:border-yellow-500 rounded-lg"
 		placeholder="Search articles"
 	/>
 	<ul>

@@ -1,16 +1,30 @@
 <script>
 	import { page } from '$app/stores';
+	import Theme from './Theme.svelte';
+	import { theme } from '$lib/store';
+
 	$: path = $page.path;
 	let isopen = false;
+
+	const toggle_theme = () => {
+		const current = $theme;
+		$theme = $theme == 'dark' ? 'light' : 'dark';
+		const doc_main = document.getElementById('doc_main');
+		doc_main.classList.remove(current);
+		doc_main.classList.add($theme);
+	};
 </script>
 
 <nav
-	class="top-0 bg-gray-50 sticky z-999 backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
+	class="top-0 bg-gray-50 dark:bg-gray-800 sticky z-999 backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
 >
 	<a class=" text-3xl font-bold leading-none" href="/">
 		<img class="h-12" src="/images/logo.png" alt="" width="auto" />
 	</a>
-	<div class="lg:hidden">
+	<div class="lg:hidden flex">
+		<button class="p-3" on:click={toggle_theme}>
+			<Theme theme={$theme} />
+		</button>
 		<button
 			on:click={() => (isopen = !isopen)}
 			class="navbar-burger flex items-center text-gray-400 p-3"
@@ -132,10 +146,15 @@
 			>
 		</li>
 	</ul>
-	<a
-		class="hidden lg:block py-2 px-6 bg-white hover:border hover:text-black text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
-		href="mailto:amalshajid@gmail.com">Contact</a
-	>
+	<div class="hidden lg:flex">
+		<button class=" mx-2 hidden lg:block" on:click={toggle_theme}>
+			<Theme theme={$theme} />
+		</button>
+		<a
+			class="hidden lg:block py-2 px-6 bg-gray-50 dark:bg-gray-900 dark:text-purple-300 hover:border hover:border-gray-700 hover:text-black text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+			href="mailto:amalshajid@gmail.com">Contact</a
+		>
+	</div>
 </nav>
 
 <div

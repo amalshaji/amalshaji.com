@@ -3,7 +3,7 @@
 		<div class="container mx-auto px-4">
 			<div class="w-full px-4 mb-12 md:mb-20 mx-auto lg:mb-0 flex flex-col items-center">
 				<h2 class="mb-4 text-4xl lg:text-5xl font-bold mx-auto font-heading">
-					<span>Hello 👋</span>
+					<span class="dark:text-gray-50">Hello 👋</span>
 					<span class="text-purple-600">I'm Amal</span>
 				</h2>
 				<div class="max-w-md mx-1 lg:mx-0">
@@ -25,14 +25,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="mr-for-radius">
-		<svg
-			class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
-			viewBox="0 0 10 10"
-			preserveAspectRatio="none"
-		>
-			<polygon fill="currentColor" points="0 0 10 0 0 10" />
-		</svg>
 	</div>
 </section>

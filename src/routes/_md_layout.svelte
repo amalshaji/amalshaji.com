@@ -10,7 +10,9 @@
 	<Seo {title} description={summary} {image} url={$page.path} />
 </svelte:head>
 
-<div class="prose w-full mx-1 my-2 md:my-8 md:mx-auto lg:w-3/4">
+<div
+	class="prose w-full mx-1 my-2 md:my-8 md:mx-auto lg:w-3/4 dark:text-gray-50 dark:prose-dark px-4 py-2 sm:dark:border dark:border-gray-700 rounded-lg"
+>
 	<div class="text-center">
 		<p><Date {date} /></p>
 		<h1>{title}</h1>
