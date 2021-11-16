@@ -8,6 +8,7 @@ image: '/images/magic.png'
 layout: default
 ---
 
+# Table of Contents
 
 Magic link authentication is where the user is sent an email with a secure link. Once the user clicks the link, the application logs the user in. Magic link is a smart way to authenticate users because it takes away the need to set and remember a strong password.
 
