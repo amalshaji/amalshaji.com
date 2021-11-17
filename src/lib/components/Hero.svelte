@@ -1,3 +1,20 @@
+<script>
+	import { onMount } from 'svelte';
+	let joke;
+
+	const getJoke = async () => {
+		const res = await fetch('https://jokes.amalshaji.workers.dev/');
+		const data = await res.json();
+		if (res.ok) {
+			joke = data.pun;
+		}
+	};
+
+	onMount(async () => {
+		getJoke();
+	});
+</script>
+
 <section>
 	<div class="pt-20 pb-20">
 		<div class="container mx-auto px-4">
@@ -13,7 +30,8 @@
 						<br />
 						Building this website using Sveltekit and tailwindCSS is one of my latest side projects.
 					</p>
-					<div class="text-center">
+
+					<div class="text-center my-2">
 						<a
 							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-indigo-600  text-white dark:bg-yellow-700 font-semibold rounded-l-xl rounded-t-xl transition duration-200"
 							href="/blog">Blog</a
@@ -22,6 +40,16 @@
 							href="/projects">Projects</a
 						>
 					</div>
+					{#if joke}
+						<div
+							class="text-gray-900 dark:text-gray-50 leading-none my-2 md:my-8 px-2 text-sm text-center"
+						>
+							{joke}
+							<button on:click={getJoke} class="px-2 py-1 bg-red-500 rounded-md shadow-lg"
+								>not funny</button
+							>
+						</div>
+					{/if}
 				</div>
 			</div>
 		</div>
