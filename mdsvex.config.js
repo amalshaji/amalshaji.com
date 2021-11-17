@@ -10,6 +10,7 @@ const config = {
 	extensions: ['.svelte.md', '.md', '.svx'],
 	layout: {
 		default: path.join(dirname, "./src/routes/_md_layout.svelte"),
+		project: path.join(dirname, "./src/routes/_project_layout.svelte")
 	},
 	smartypants: {
 		dashes: 'oldschool'
