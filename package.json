@@ -7,7 +7,7 @@
 		"preview": "svelte-kit preview",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"postBuild": "node ./build/sitemap.js"
+		"postbuild": "node ./build/sitemap.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.21",
