@@ -22,6 +22,7 @@
 	<div class="text-center">
 		<p><Date {date} /></p>
 		<h1>{title}</h1>
+		<hr />
 		<div class="flex text-sm sm:text-md flex-wrap text-center">
 			{#each tags as tag}
 				<a class="mx-1 my-1" href={`/tags/${tag}`}>#{tag.toUpperCase()}</a>

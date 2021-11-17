@@ -30,6 +30,22 @@
 	export let filteredPosts, tag;
 	import Seo from '$lib/components/SEO.svelte';
 	import Date from '$lib/components/Date.svelte';
+
+	let search = '',
+		filteredPostsByTag = [];
+
+	const filter = () => {
+		if (search.length > 0) {
+			filteredPostsByTag = filteredPosts.filter(
+				(post) =>
+					post.metadata.title.toLowerCase().includes(search) ||
+					post.metadata.summary.toLowerCase().includes(search)
+			);
+		} else {
+			filteredPostsByTag = filteredPosts;
+		}
+	};
+	filteredPostsByTag = filteredPosts;
 </script>
 
 <svelte:head>
@@ -42,11 +58,13 @@
 	</div>
 	<input
 		type="text"
+		bind:value={search}
+		on:input={filter}
 		class="px-4 w-full md:w-1/2 my-8 border border-gray-400 dark:border-gray-700 dark:text-gray-50 dark:bg-gray-800 focus:border-yellow-500 rounded-lg"
 		placeholder="Search articles"
 	/>
 	<ul>
-		{#each filteredPosts as post}
+		{#each filteredPostsByTag as post}
 			<li class="my-2 py-2">
 				<article class="space-y-2 lg:grid lg:grid-cols-4 lg:space-y-0 lg:items-baseline">
 					<dl>

@@ -2,7 +2,6 @@
 title: Django Magic Link Authentication
 date: '2021-11-14'
 tags: ['magic link', 'auth', 'django', 'redis', 'python']
-draft: false
 summary: Learn how magic link authentication work by building one
 image: '/images/magic.png'
 layout: default

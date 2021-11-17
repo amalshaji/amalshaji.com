@@ -2,7 +2,6 @@
 title: Deploying Sapper To Deta.sh
 date: '2021-09-03'
 tags: ['deta', 'sapper', 'svelte', 'express']
-draft: false
 summary: You get free cloud, SSR and PWA. What else do you need?
 image: '/images/sapper-deta.png'
 layout: default
