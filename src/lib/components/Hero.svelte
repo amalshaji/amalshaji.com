@@ -44,9 +44,10 @@
 						<div
 							class="text-gray-900 dark:text-gray-50 leading-none my-2 md:my-8 px-2 text-sm text-center"
 						>
-							{joke}
-							<button on:click={getJoke} class="px-2 py-1 bg-red-500 rounded-md shadow-lg"
-								>not funny</button
+							<code>{joke}</code>
+							<button
+								on:click={getJoke}
+								class="px-2 py-1 m-1 bg-red-500 rounded-md shadow-lg font-medium">not funny</button
 							>
 						</div>
 					{/if}
