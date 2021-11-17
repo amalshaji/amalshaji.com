@@ -23,9 +23,7 @@
 	};
 </script>
 
-<nav
-	class="top-0 bg-gray-50 dark:bg-gray-800 sticky backdrop-filter backdrop-blur-xl px-6 py-6 flex justify-between items-center"
->
+<nav class="bg-gray-50 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
 	<a aria-label="Amal Shaji" class="text-3xl font-bold leading-none" href="/">
 		<img class="h-12" src="/images/logo.png" alt="Amal Shaji" width="auto" height="auto" />
 	</a>
@@ -53,7 +51,7 @@
 		<li>
 			<a
 				class="{path == '/'
-					? 'font-semibold text-yellow-500'
+					? 'font-semibold text-blue-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/">Home</a
 			>
@@ -77,7 +75,7 @@
 		<li>
 			<a
 				class="{path.startsWith('/blog')
-					? 'font-semibold text-yellow-500'
+					? 'font-semibold text-blue-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/blog">Blog</a
 			>
@@ -101,7 +99,7 @@
 		<li>
 			<a
 				class="{path.startsWith('/tags')
-					? 'font-semibold text-yellow-500'
+					? 'font-semibold text-blue-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/tags">Tags</a
 			>
@@ -125,7 +123,7 @@
 		<li>
 			<a
 				class="{path == '/projects'
-					? 'font-semibold text-yellow-500'
+					? 'font-semibold text-blue-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/projects">Projects</a
 			>
@@ -149,7 +147,7 @@
 		<li>
 			<a
 				class="{path == '/about'
-					? 'font-semibold text-yellow-500'
+					? 'font-semibold text-blue-500'
 					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
 				href="/about">About</a
 			>

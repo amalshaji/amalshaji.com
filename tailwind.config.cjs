@@ -20,7 +20,7 @@ const config = {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
-				primary: colors.amber,
+				primary: colors.blue,
 				gray: colors.trueGray,
 			},
 			typography: (theme) => ({
