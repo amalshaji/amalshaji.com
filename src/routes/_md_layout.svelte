@@ -2,7 +2,6 @@
 	import Seo from '$lib/components/SEO.svelte';
 	import Date from '$lib/components/Date.svelte';
 	import { page } from '$app/stores';
-	import Waypoint from 'svelte-waypoint';
 	import '../../static/code.css';
 	import { onMount } from 'svelte';
 
@@ -31,9 +30,7 @@
 	</div>
 
 	{#if image}
-		<Waypoint throttle="500" offset="200">
-			<img src={image} alt={title} />
-		</Waypoint>
+		<img src={image} alt={title} loading="lazy" />
 	{/if}
 
 	<slot />
