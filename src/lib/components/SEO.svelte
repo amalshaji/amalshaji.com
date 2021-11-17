@@ -1,5 +1,5 @@
 <script>
-	const siteUrl = 'https://v2.amalshaji.com';
+	const siteUrl = 'https://amalshaji.com';
 	export let title = 'Amal Shaji',
 		description = 'My weird experiments',
 		url = '/',
