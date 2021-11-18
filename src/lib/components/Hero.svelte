@@ -21,7 +21,7 @@
 			<div class="w-full px-4 mb-12 md:mb-20 mx-auto lg:mb-0 flex flex-col items-center">
 				<h2 class="mb-4 text-4xl lg:text-5xl font-bold mx-auto font-heading">
 					<span class="dark:text-gray-300">Hello 👋</span>
-					<span class="text-indigo-600 dark:text-yellow-700">I'm Amal</span>
+					<span class="text-blue-500">I'm Amal</span>
 				</h2>
 				<div class="max-w-lg mx-1 lg:mx-0">
 					<p class="mb-6 text-gray-900 dark:text-gray-50 leading-loose text-justify">
@@ -33,22 +33,25 @@
 
 					<div class="text-center my-2">
 						<a
-							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-indigo-600  text-white dark:bg-yellow-700 font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-500  text-white  font-semibold rounded-l-xl rounded-t-xl transition duration-200"
 							href="/blog">Blog</a
 						><a
-							class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-gray-800 text-white dark:text-black dark:bg-gray-300 rounded-l-xl rounded-t-xl transition duration-200"
+							class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-green-500 text-white rounded-l-xl rounded-t-xl transition duration-200"
 							href="/projects">Projects</a
 						>
 					</div>
 					{#if joke}
 						<div
-							class="text-gray-900 dark:text-gray-50 leading-none my-2 md:my-8 px-2 text-sm text-center"
+							class="prose text-gray-900 dark:text-gray-50 leading-none mt-4 md:mt-8 px-2 text-sm"
 						>
-							<code>{joke}</code>
-							<button
-								on:click={getJoke}
-								class="px-2 py-1 m-1 bg-red-500 rounded-md shadow-lg font-medium">not funny</button
-							>
+							<blockquote class="h-8 my-auto">
+								{joke}
+								<button
+									on:click={getJoke}
+									class="px-2 py-1 m-1 bg-red-500 rounded-md shadow-lg font-medium"
+									>not funny</button
+								>
+							</blockquote>
 						</div>
 					{/if}
 				</div>
