@@ -56,6 +56,9 @@
 	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-50">
 		All posts on <span class="font-sans text-primary-700">{tag.toUpperCase()}</span>
 	</div>
+	<p class="prose text-gray-500 dark:text-gray-400">
+		Use the search bar to filter posts by title or summary
+	</p>
 	<input
 		type="text"
 		bind:value={search}

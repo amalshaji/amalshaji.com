@@ -47,7 +47,7 @@
 
 <div class="mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
 	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-50">All posts</div>
-	<p class="font-medium text-gray-500 dark:text-gray-400">
+	<p class="prose text-gray-500 dark:text-gray-400">
 		Use the search bar to filter posts by title or summary
 	</p>
 	<input
