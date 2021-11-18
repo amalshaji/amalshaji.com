@@ -4,7 +4,7 @@
 	import '../../static/code.css';
 	import { onMount } from 'svelte';
 
-	export let title, description, image, link, tags;
+	export let title, description, image, link;
 
 	onMount(() => {
 		window.scrollTo(0, 0);

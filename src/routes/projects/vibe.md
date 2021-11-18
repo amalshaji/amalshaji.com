@@ -7,3 +7,15 @@ github: https://github.com/amalshaji/vibe
 index: 2
 layout: project
 ---
+
+## Features
+
+- Have some fun
+
+## Built with
+
+- [Svelte](https://svelte.dev)
+
+## Future
+
+Will be integrated into this website.

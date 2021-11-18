@@ -7,3 +7,15 @@ github: https://github.com/amalshaji/markdown2medium
 index: 4
 layout: project
 ---
+
+
+## Features
+
+- Convert markdown code blocks to github gists
+- Import gist to medium
+- All code blocks(of a markdown file) are added to the same gist
+
+## Built with
+
+- [Flask](https://flask.palletsprojects.com/)
+- [Deta](https://deta.sh)
