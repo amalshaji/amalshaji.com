@@ -21,7 +21,7 @@ const config = {
 			},
 			colors: {
 				primary: colors.sky,
-				gray: colors.blueGray,
+				gray: colors.trueGray,
 			},
 			typography: (theme) => ({
 				DEFAULT: {
