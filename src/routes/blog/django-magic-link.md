@@ -4,7 +4,7 @@ date: '2021-11-14'
 tags: ['magic link', 'auth', 'django', 'redis', 'python']
 summary: Learn how magic link authentication work by building one
 image: '/images/magic.png'
-layout: default
+layout: blog
 ---
 
 ## Table Of Contents

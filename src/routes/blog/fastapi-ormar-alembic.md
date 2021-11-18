@@ -4,7 +4,7 @@ date: '2021-08-14'
 tags: ['python', 'fastapi', 'pydantic', 'sqlalchemy', 'ormar', 'alembic', 'migrations']
 summary: Learn how to setup a mini async ORM with migrations for your next FastAPI project.
 image: '/images/fastapi-ormar-alembic.png'
-layout: default
+layout: blog
 ---
 
 ## Table Of Contents

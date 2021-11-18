@@ -42,13 +42,13 @@
 					</div>
 					{#if joke}
 						<div
-							class="prose text-gray-900 dark:text-gray-50 leading-none mt-4 md:mt-8 px-2 text-sm"
+							class="prose dark:prose-dark text-gray-900 dark:text-gray-50 leading-none mt-4 md:mt-8 px-2 text-sm"
 						>
 							<blockquote class="h-8 my-auto">
 								{joke}
 								<button
 									on:click={getJoke}
-									class="px-2 py-1 m-1 bg-red-500 rounded-md shadow-lg font-medium"
+									class="px-2 py-1 m-1 bg-red-500 dark:text-gray-50 rounded-md shadow-lg sm:font-medium"
 									>not funny</button
 								>
 							</blockquote>

@@ -3,7 +3,7 @@ title: Pydantic For FastAPI
 date: '2021-06-07'
 tags: ['python', 'fastapi', 'pydantic']
 summary: Check out the pydantic features with examples that makes your fastapi application better
-layout: default
+layout: blog
 ---
 
 ## Table Of Contents
