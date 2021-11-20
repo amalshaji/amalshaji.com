@@ -2,7 +2,6 @@
 	import Seo from '$lib/components/SEO.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-
 	export let title, description, image, link, github;
 
 	onMount(() => {
@@ -28,9 +27,11 @@
 	</div>
 
 	{#if image}
-		<img src={image} alt={title} loading="lazy" />
+		<div class="w-full h-52 sm:h-96 my-4">
+			<img src={image} alt={title} class="my-2 rounded-lg" loading="lazy" />
+		</div>
 	{/if}
-	<div class="flex mx-2">
+	<div class="flex mx-2 my-4">
 		<a href={link} class="flex" target="_blank" rel="noreferrer"
 			>Preview <svg
 				xmlns="http://www.w3.org/2000/svg"
