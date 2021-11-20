@@ -41,12 +41,14 @@
 						href={`/projects/${project.path.replace('.md', '').replace('.svx', '')}`}
 						class="text-gray-900 dark:text-gray-100"
 					>
-						<img
-							src={project.metadata.image}
-							loading="lazy"
-							class="my-2 rounded-lg"
-							alt={project.metadata.title}
-						/>
+						<div class="w-full h-56 md:h-72 lg:h-80">
+							<img
+								src={project.metadata.image}
+								loading="lazy"
+								class="my-2 mx-auto sm:mx-0 rounded-lg h-full"
+								alt={project.metadata.title}
+							/>
+						</div>
 						<div class="flex mx-4">
 							{project.metadata.title}
 							<a href={project.metadata.link} class="mx-1" target="_blank" rel="noreferrer">
