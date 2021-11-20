@@ -27,7 +27,7 @@
 	</div>
 
 	{#if image}
-		<div class="w-full h-52 sm:h-96 my-4">
+		<div class="w-full h-56 sm:h-96 my-4">
 			<img src={image} alt={title} class="my-2 rounded-lg" loading="lazy" />
 		</div>
 	{/if}
