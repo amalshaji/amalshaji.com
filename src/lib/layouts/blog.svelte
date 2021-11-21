@@ -23,19 +23,22 @@
 <div
 	class="prose w-full mx-1 my-2 md:my-8 md:mx-auto lg:w-3/4 dark:text-gray-50 dark:prose-dark px-4 py-2 sm:dark:border dark:border-gray-700 rounded-lg"
 >
-	<div class="text-center">
+	<div class="text-center w-full">
 		<p><Date {date} /></p>
-		<h1>{title}</h1>
-		<hr />
-		<div class="flex text-sm sm:text-md flex-wrap text-center">
+		<p class="text-3xl font-semibold">{title}</p>
+		<p class="text-xl">{summary}</p>
+		<div class="flex text-sm sm:text-md flex-wrap">
 			{#each tags as tag}
-				<a class="mx-1 my-1" href={`/tags/${tag}`}>#{tag.toUpperCase()}</a>
+				<a class="mx-auto my-1" href={`/tags/${tag}`}>#{tag.toUpperCase()}</a>
 			{/each}
 		</div>
+		<hr />
 	</div>
 
 	{#if image}
-		<img src={image} alt={title} loading="lazy" />
+		<div class="w-full h-56 sm:h-96 my-4">
+			<img src={image} alt={title} class="my-2 rounded-lg" loading="lazy" />
+		</div>
 	{/if}
 
 	<slot />

@@ -22,8 +22,8 @@
 	class="prose w-full mx-1 my-2 md:my-8 md:mx-auto lg:w-3/4 dark:text-gray-50 dark:prose-dark px-4 py-2 sm:dark:border dark:border-gray-700 rounded-lg"
 >
 	<div class="text-center">
-		<h1>{title}</h1>
-		<blockquote>{description}</blockquote>
+		<p class="text-3xl font-semibold">{title}</p>
+		<p class="text-xl">{description}</p>
 	</div>
 
 	{#if image}
