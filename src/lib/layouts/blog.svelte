@@ -36,7 +36,9 @@
 	</div>
 
 	{#if image}
-		<img src={image} alt={title} loading="lazy" />
+		<div class="w-full h-56 sm:h-96 my-4">
+			<img src={image} alt={title} class="my-2 rounded-lg" loading="lazy" />
+		</div>
 	{/if}
 
 	<slot />
