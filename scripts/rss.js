@@ -8,14 +8,14 @@ const generate_feed = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <channel>
 <atom:link href="http://amalshaji.com/feed.xml" rel="self" type="application/rss+xml" />
 <title>Amal Shaji</title>
-<link>https://v2.amalshaji.com</link>
+<link>https://amalshaji.com</link>
 <description>I write about what I learn. Currently exploring Python, Go and Svelte</description>
 <language>en-us</language>
 <lastBuildDate>${new Date().toDateString()}</lastBuildDate>
 ${posts
         .map(
             (post) => `<item>
-<guid>https://v2.amalshaji.com${post.path}</guid>
+<guid>https://amalshaji.com${post.path}</guid>
 <title>${post.metadata.title}</title>
 <link>https://amalshaji.com/${post.path}</link>
 <description>${post.metadata.summary}</description>
@@ -42,7 +42,7 @@ export const rss = async () => {
             { path: allPosts[path].replace("./src/routes", "").replace(".md", ""), metadata: parseMarkdown(contents) }
         );
     }
-    posts.sort((a, b) => (a.date > b.date ? -1 : 1));
+    posts.sort((a, b) => (a.metadata.date > b.metadata.date ? -1 : 1));
     const feed = generate_feed(posts)
     fs.writeFileSync("static/feed.xml", feed)
 }
