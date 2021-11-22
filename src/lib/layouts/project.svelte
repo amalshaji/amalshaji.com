@@ -19,7 +19,7 @@
 </svelte:head>
 
 <div
-	class="prose w-full mx-1 my-2 md:my-8 md:mx-auto lg:w-3/4 dark:text-gray-50 dark:prose-dark px-4 py-2 sm:dark:border dark:border-gray-700 rounded-lg"
+	class="prose w-full mx-1 my-2 md:my-8 md:mx-auto md:w-2/3 dark:text-gray-50 dark:prose-dark p-2"
 >
 	<div class="text-center">
 		<p class="text-3xl font-semibold">{title}</p>
@@ -31,7 +31,7 @@
 			<img src={image} alt={title} class="my-2 rounded-lg" loading="lazy" />
 		</div>
 	{/if}
-	<div class="flex mx-2 my-4">
+	<div class="flex mx-2 my-8">
 		<a href={link} class="flex" target="_blank" rel="noreferrer"
 			>Preview <svg
 				xmlns="http://www.w3.org/2000/svg"
