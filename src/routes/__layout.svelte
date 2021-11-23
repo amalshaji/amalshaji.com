@@ -27,7 +27,7 @@
 
 <Navbar />
 
-<div class="w-full mx-1 md:mx-auto text-lg leading-12">
+<div class="mx-1 md:mx-auto text-lg leading-12">
 	<slot />
 </div>
 
