@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import { prefetchRoutes } from '$app/navigation';
+	import { prefetchRoutes, prefetch } from '$app/navigation';
 	import { browser } from '$app/env';
 	import Footer from '$lib/components/Footer.svelte';
 	import { theme } from '$lib/store';
@@ -39,9 +39,10 @@
 		localStorage.setItem('amalshaji_com_theme', $theme);
 	};
 
-	if (browser) {
-		prefetchRoutes(['/', '/blog', '/about', '/tags', '/projects']);
-	}
+	// if (browser) {
+	// 	prefetch();
+	// 	prefetchRoutes(['/', '/blog/', '/about', '/tags/', '/projects/']);
+	// }
 </script>
 
 <Navbar />
