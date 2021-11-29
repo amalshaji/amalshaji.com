@@ -16,7 +16,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
-
+	<title>{title}</title>
 	<Seo {title} description={summary} {image} url={$page.path} />
 </svelte:head>
 

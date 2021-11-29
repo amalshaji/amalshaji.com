@@ -42,6 +42,7 @@
 </script>
 
 <svelte:head>
+	<title>Blog | Amal Shaji</title>
 	<Seo title="Blog | Amal Shaji" url="/blog" />
 </svelte:head>
 
