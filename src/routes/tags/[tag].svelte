@@ -49,6 +49,7 @@
 </script>
 
 <svelte:head>
+	<title>{`Posts on ${tag.toUpperCase()} by Amal`}</title>
 	<Seo title={`Posts on ${tag.toUpperCase()} by Amal`} url={`/tags/${tag}`} />
 </svelte:head>
 

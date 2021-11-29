@@ -35,6 +35,7 @@
 </script>
 
 <svelte:head>
+	<title>Tags | Amal Shaji</title>
 	<Seo title="Tags | Amal Shaji" url="/tags" />
 </svelte:head>
 

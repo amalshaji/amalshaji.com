@@ -1,11 +1,30 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import { prefetchRoutes } from '$app/navigation';
+	import { prefetchRoutes, prefetch } from '$app/navigation';
 	import { browser } from '$app/env';
 	import Footer from '$lib/components/Footer.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
+	import NProgress from 'nprogress';
+	import { navigating } from '$app/stores';
+
+	// NProgress css
+	import 'nprogress/nprogress.css';
+
+	NProgress.configure({
+		// Full list: https://github.com/rstacruz/nprogress#configuration
+		minimum: 0.16
+	});
+
+	$: {
+		if ($navigating) {
+			NProgress.start();
+		}
+		if (!$navigating) {
+			NProgress.done();
+		}
+	}
 
 	onMount(() => {
 		$theme = localStorage.getItem('amalshaji_com_theme') || 'light';
@@ -20,9 +39,10 @@
 		localStorage.setItem('amalshaji_com_theme', $theme);
 	};
 
-	if (browser) {
-		prefetchRoutes();
-	}
+	// if (browser) {
+	// 	prefetch();
+	// 	prefetchRoutes(['/', '/blog/', '/about', '/tags/', '/projects/']);
+	// }
 </script>
 
 <Navbar />

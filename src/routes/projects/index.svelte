@@ -26,6 +26,7 @@
 </script>
 
 <svelte:head>
+	<title>Projects | Amal Shaji</title>
 	<Seo title="Projects | Amal Shaji" url="/projects" />
 </svelte:head>
 

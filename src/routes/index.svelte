@@ -4,6 +4,7 @@
 </script>
 
 <svelte:head>
+	<title>Amal Shaji</title>
 	<Seo />
 </svelte:head>
 

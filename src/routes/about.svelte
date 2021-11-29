@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+	<title>About | Amal Shaji</title>
 	<Seo title="Amal Shaji" url="/about" />
 </svelte:head>
 
