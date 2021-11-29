@@ -40,7 +40,7 @@
 	};
 
 	if (browser) {
-		prefetchRoutes();
+		prefetchRoutes(['/', '/blog', '/about', '/tags', '/projects']);
 	}
 </script>
 
