@@ -25,7 +25,7 @@
 
 <nav class="bg-gray-50 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
 	<a aria-label="Amal Shaji" class="text-3xl font-bold leading-none" href="/">
-		<img class="h-12" src="/images/logo.png" alt="Amal Shaji" width="auto" height="auto" />
+		<img class="h-12" src="/images/favicon.svg" alt="Amal Shaji" width="auto" height="auto" />
 	</a>
 	<div class="lg:hidden flex">
 		<button aria-label="theme switch" class="p-3" on:click={toggle_theme}>
@@ -169,7 +169,7 @@
 	>
 		<div class="flex items-center mb-8">
 			<a class="mr-auto text-3xl font-bold leading-none" href="/" aria-label="Amal Shaji">
-				<img class="h-12" src="/images/logo.png" alt="Amal Shaji" width="auto" height="auto" />
+				<img class="h-12" src="/images/favicon.svg" alt="Amal Shaji" width="auto" height="auto" />
 			</a>
 			<button class="navbar-close" on:click={() => (isopen = false)}>
 				<svg
