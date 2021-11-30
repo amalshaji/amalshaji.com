@@ -44,7 +44,7 @@ npm i -D nprogress
 
 ## Adding Progress Bar
 
-We will use the [$app/stores](https://kit.svelte.dev/docs#modules) module for our progress bar login. Specifically, the `$navigating` store. 
+We will use the [$app/stores](https://kit.svelte.dev/docs#modules) module for our progress bar. Specifically, the `$navigating` store. 
 
 > navigating is a [readable store](https://svelte.dev/tutorial/readable-stores). When navigating starts, its value is `{ from, to }`, where from and to both mirror the page store value. When navigating finishes, its value reverts to null - Official docs.
 
