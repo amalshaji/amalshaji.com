@@ -20,11 +20,11 @@
 		<div class="container mx-auto px-4">
 			<div class="w-full px-4 mb-12 md:mb-20 mx-auto lg:mb-0 flex flex-col items-center">
 				<h2 class="mb-4 text-4xl lg:text-5xl font-bold mx-auto font-heading">
-					<span class="dark:text-gray-300">Hello 👋</span>
-					<span class="text-blue-500">I'm Amal</span>
+					<span class="dark:text-gray-400">Hello 👋</span>
+					<span class="text-gray-500">I'm Amal</span>
 				</h2>
 				<div class="max-w-lg mx-1 lg:mx-0">
-					<p class="mb-6 text-gray-900 dark:text-gray-50 leading-loose text-justify">
+					<p class="mb-6 text-gray-900 dark:text-gray-300 leading-loose text-justify">
 						I love working with Python, Go and Svelte. Once in a while, I try to experiment on
 						something and document my journey here. I'm also interested in Rust and Solana.
 						<br />
@@ -42,13 +42,13 @@
 					</div>
 					{#if joke}
 						<div
-							class="prose dark:prose-dark text-gray-900 dark:text-gray-50 leading-none mt-4 md:mt-8 px-2 text-sm"
+							class="prose dark:prose-dark text-gray-900 dark:text-gray-400 leading-none mt-4 md:mt-8 px-2 text-sm"
 						>
 							<blockquote class="h-8 my-auto">
 								{joke}
 								<button
 									on:click={getJoke}
-									class="px-2 py-1 m-1 bg-red-500 dark:text-gray-50 rounded-md shadow-lg sm:font-medium"
+									class="px-2 py-1 m-1 bg-red-500 dark:text-gray-400 rounded-md shadow-lg sm:font-medium"
 									>not funny</button
 								>
 							</blockquote>

@@ -19,7 +19,7 @@
 </svelte:head>
 
 <div
-	class="prose w-full my-2 md:my-8 md:mx-auto md:w-2/3 dark:text-gray-50 dark:prose-dark py-2 px-2 sm:px-0"
+	class="prose w-full my-2 md:my-8 md:mx-auto md:w-2/3 dark:text-gray-400 dark:prose-dark py-2 px-2 sm:px-0"
 >
 	<div class="text-center">
 		<p class="text-3xl font-semibold">{title}</p>

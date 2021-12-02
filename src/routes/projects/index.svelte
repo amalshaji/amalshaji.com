@@ -31,7 +31,7 @@
 </svelte:head>
 
 <div class="mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
-	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-50">All Projects</div>
+	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-400">All Projects</div>
 	<div class="block md:flex md:flex-wrap overflow-hidden lg:-mx-4 xl:-mx-4">
 		{#each projects as project}
 			<div
@@ -40,7 +40,7 @@
 				<h3 class="text-lg md:text-2xl font-bold leading-8 tracking-tight">
 					<a
 						href={`/projects/${project.path.replace('.md', '').replace('.svx', '')}`}
-						class="text-gray-900 dark:text-gray-100"
+						class="text-gray-900 dark:text-gray-400"
 					>
 						<div class="w-full h-56 md:h-72 lg:h-80">
 							<img
