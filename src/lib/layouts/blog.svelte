@@ -20,13 +20,11 @@
 	<Seo {title} description={summary} {image} url={$page.path} />
 </svelte:head>
 
-<div
-	class="prose w-full my-2 md:my-8 md:mx-auto md:w-2/3 dark:text-gray-400 dark:prose-dark px-2 sm:px-0 py-2"
->
+<div class="prose w-full my-2 md:my-8 md:mx-auto md:w-2/3 dark:prose-dark px-2 sm:px-0 py-2">
 	<div class="text-center w-full">
 		<p><Date {date} /></p>
-		<p class="text-3xl font-semibold">{title}</p>
-		<p class="text-xl">{summary}</p>
+		<p class="text-3xl font-semibold dark:text-gray-300">{title}</p>
+		<p class="text-xl dark:text-gray-400">{summary}</p>
 		<div class="flex text-sm sm:text-md flex-wrap">
 			{#each tags as tag}
 				<a class="mx-auto my-1" href={`/tags/${tag}`}>#{tag.toUpperCase()}</a>

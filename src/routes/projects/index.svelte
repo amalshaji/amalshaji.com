@@ -31,7 +31,7 @@
 </svelte:head>
 
 <div class="mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4">
-	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-400">All Projects</div>
+	<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-300">All Projects</div>
 	<div class="block md:flex md:flex-wrap overflow-hidden lg:-mx-4 xl:-mx-4">
 		{#each projects as project}
 			<div
@@ -51,7 +51,7 @@
 							/>
 						</div>
 						<div class="flex mx-4">
-							{project.metadata.title}
+							<p class="dark:text-gray-300">{project.metadata.title}</p>
 							<a href={project.metadata.link} class="mx-1" target="_blank" rel="noreferrer">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
