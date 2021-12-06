@@ -37,7 +37,7 @@
 			<div
 				class="w-full my-2 border md:border-0 dark:border-gray-700 rounded-lg md:w-1/2 overflow-hidden lg:my-4 lg:px-4 lg:w-1/2 xl:my-4 xl:px-4 xl:w-1/2"
 			>
-				<h3 class="text-lg md:text-2xl font-bold leading-8 tracking-tight">
+				<h3 class="text-lg md:text-2xl font-semibold leading-8 tracking-tight">
 					<a
 						href={`/projects/${project.path.replace('.md', '').replace('.svx', '')}`}
 						class="text-gray-900 dark:text-gray-400"
