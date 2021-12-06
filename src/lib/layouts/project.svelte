@@ -18,7 +18,7 @@
 	<Seo {title} {description} {image} url={$page.path} />
 </svelte:head>
 
-<div class="prose w-full my-2 md:my-8 md:mx-auto dark:prose-dark py-2 px-2 sm:px-0">
+<div class="prose w-full my-2 md:my-8 md:mx-auto dark:prose-dark py-2 px-4 sm:px-0">
 	<div class="text-center">
 		<p class="text-3xl font-semibold dark:text-gray-300">{title}</p>
 		<p class="text-xl dark:text-gray-400">{description}</p>

@@ -23,7 +23,7 @@
 	};
 </script>
 
-<nav class="bg-gray-100 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
+<nav class="bg-gray-50 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
 	<a aria-label="Amal Shaji" class="text-3xl font-bold leading-none" href="/">
 		<img class="h-12" src="/images/favicon.svg" alt="Amal Shaji" width="auto" height="auto" />
 	</a>
@@ -52,7 +52,7 @@
 			<a
 				class="{path == '/'
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/">Home</a
 			>
 		</li>
@@ -61,17 +61,8 @@
 			<a
 				class="{path.startsWith('/blog')
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/blog">Blog</a
-			>
-		</li>
-
-		<li>
-			<a
-				class="{path.startsWith('/tags')
-					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
-				href="/tags">Tags</a
 			>
 		</li>
 
@@ -79,7 +70,7 @@
 			<a
 				class="{path == '/projects'
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/projects">Projects</a
 			>
 		</li>
@@ -88,7 +79,7 @@
 			<a
 				class="{path == '/about'
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-50 hover:border dark:border-gray-700 hover:animate-pulse px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/about">About</a
 			>
 		</li>
@@ -142,13 +133,6 @@
 						on:click={() => (isopen = false)}
 						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
 						href="/blog">Blog</a
-					>
-				</li>
-				<li class="mb-1">
-					<a
-						on:click={() => (isopen = false)}
-						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-						href="/tags">Tags</a
 					>
 				</li>
 				<li class="mb-1">
