@@ -78,11 +78,6 @@
 									{post.metadata.title}
 								</a>
 							</h3>
-							<div class="flex flex-wrap prose">
-								{#each post.metadata.tags as tag}
-									<a class="mx-1" href={`/tags/${tag}`}>{tag.toUpperCase()}</a>
-								{/each}
-							</div>
 						</div>
 						<div class="prose text-gray-500 max-w-none dark:text-gray-400">
 							{post.metadata.summary}
