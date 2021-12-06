@@ -55,7 +55,7 @@
 		type="text"
 		bind:value={search}
 		on:input={filter}
-		class="px-2 w-full md:w-3/4 mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-lg"
+		class="px-2 py-2 w-full md:w-3/4 mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-lg"
 		placeholder="Search articles"
 	/>
 	<ul>
