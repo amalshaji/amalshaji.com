@@ -46,7 +46,7 @@
 	<Seo title="Blog | Amal Shaji" url="/blog" />
 </svelte:head>
 
-<div class="mx-6 my-2 md:my-8 md:mx-auto w-full lg:w-1/2">
+<div class="my-2 md:my-8 md:mx-auto w-full px-4 md:px-0 lg:w-1/2">
 	<div class="w-full md:mx-auto">
 		<div class="text-2xl md:text-4xl font-semibold my-4 dark:text-gray-300">Blog</div>
 		<p class="prose text-gray-500 dark:text-gray-400">

@@ -25,11 +25,6 @@
 		<p><Date {date} /></p>
 		<p class="text-3xl font-semibold dark:text-gray-300">{title}</p>
 		<p class="text-xl dark:text-gray-400">{summary}</p>
-		<div class="flex text-sm sm:text-md flex-wrap">
-			{#each tags as tag}
-				<a class="mx-auto my-1" href={`/tags/${tag}`}>#{tag.toUpperCase()}</a>
-			{/each}
-		</div>
 		<hr />
 	</div>
 
