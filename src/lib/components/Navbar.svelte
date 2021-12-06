@@ -23,7 +23,7 @@
 	};
 </script>
 
-<nav class="bg-gray-50 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
+<nav class="bg-gray-100 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
 	<a aria-label="Amal Shaji" class="text-3xl font-bold leading-none" href="/">
 		<img class="h-12" src="/images/favicon.svg" alt="Amal Shaji" width="auto" height="auto" />
 	</a>
@@ -56,22 +56,7 @@
 				href="/">Home</a
 			>
 		</li>
-		<li class="text-gray-200">
-			<svg
-				class="w-4 h-4 current-fill"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-				/>
-			</svg>
-		</li>
+
 		<li>
 			<a
 				class="{path.startsWith('/blog')
@@ -80,22 +65,7 @@
 				href="/blog">Blog</a
 			>
 		</li>
-		<li class="text-gray-200">
-			<svg
-				class="w-4 h-4 current-fill"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-				/>
-			</svg>
-		</li>
+
 		<li>
 			<a
 				class="{path.startsWith('/tags')
@@ -104,22 +74,7 @@
 				href="/tags">Tags</a
 			>
 		</li>
-		<li class="text-gray-200">
-			<svg
-				class="w-4 h-4 current-fill"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-				/>
-			</svg>
-		</li>
+
 		<li>
 			<a
 				class="{path == '/projects'
@@ -128,22 +83,7 @@
 				href="/projects">Projects</a
 			>
 		</li>
-		<li class="text-gray-200">
-			<svg
-				class="w-4 h-4 current-fill"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-				/>
-			</svg>
-		</li>
+
 		<li>
 			<a
 				class="{path == '/about'
