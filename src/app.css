@@ -7,6 +7,15 @@ html {
     scroll-behavior: smooth;
 }
 
-pre {
-    border: 1px solid #616161;
+#nprogress .bar {
+	background: ##57ffe6 !important;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px ##57ffe6, 0 0 5px ##57ffe6;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: ##57ffe6;
+    border-left-color: ##57ffe6;
 }

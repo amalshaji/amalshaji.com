@@ -21,7 +21,7 @@
 			<div class="w-full px-4 mb-12 md:mb-20 mx-auto lg:mb-0 flex flex-col items-center">
 				<h2 class="mb-4 text-4xl lg:text-5xl font-bold mx-auto font-heading">
 					<span class="dark:text-gray-400">Hello 👋</span>
-					<span class="text-gray-500">I'm Amal</span>
+					<span class="text-purple-600">I'm Amal</span>
 				</h2>
 				<div class="max-w-lg mx-1 lg:mx-0">
 					<p class="mb-6 text-gray-900 dark:text-gray-300 leading-loose text-justify">
@@ -36,7 +36,7 @@
 							class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-500  text-white  font-semibold rounded-l-xl rounded-t-xl transition duration-200"
 							href="/blog">Blog</a
 						><a
-							class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-green-500 text-white rounded-l-xl rounded-t-xl transition duration-200"
+							class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-purple-500 text-white rounded-l-xl rounded-t-xl transition duration-200"
 							href="/projects">Projects</a
 						>
 					</div>
