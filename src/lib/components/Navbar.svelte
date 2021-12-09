@@ -52,7 +52,7 @@
 			<a
 				class="{path == '/'
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/">Home</a
 			>
 		</li>
@@ -61,7 +61,7 @@
 			<a
 				class="{path.startsWith('/blog')
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/blog">Blog</a
 			>
 		</li>
@@ -70,7 +70,7 @@
 			<a
 				class="{path == '/projects'
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/projects">Projects</a
 			>
 		</li>
@@ -79,7 +79,7 @@
 			<a
 				class="{path == '/about'
 					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:border-gray-700 px-4 py-2 rounded-lg"
+					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
 				href="/about">About</a
 			>
 		</li>
