@@ -9,19 +9,3 @@ github: https://github.com/amalshaji/amalytics
 index: 5
 layout: project
 ---
-
-
-## Features
-
-- Add website to track
-- Cookie-less analytics
-- Basic information like, visits, country, device, browser
-
-## Built with
-
-- [Flask](https://flask.palletsprojects.com/)
-- [HarperDB](https://harperdb.io/)
-
-## Future
-
-The project is currently in a transition phase. I'm thinking of making it a [Deta](https://deta.sh) hosted project.
