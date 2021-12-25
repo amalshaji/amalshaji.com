@@ -3,11 +3,12 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Socials from '$lib/components/Socials.svelte';
+	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
 	import { prefetchRoutes } from '$app/navigation';
 	import { browser } from '$app/env';
-
+	let y;
 	if (browser) {
 		prefetchRoutes();
 	}
@@ -27,7 +28,10 @@
 </script>
 
 <Navbar />
+<ScrollToTop {y} />
 
 <slot />
 <Socials />
 <Footer />
+
+<svelte:window bind:scrollY={y} />
