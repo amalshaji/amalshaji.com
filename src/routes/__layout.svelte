@@ -2,27 +2,15 @@
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Socials from '$lib/components/Socials.svelte';
+	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
-	import NProgress from 'nprogress';
-	import { navigating } from '$app/stores';
-
-	import 'nprogress/nprogress.css';
-
-	NProgress.configure({
-		// Full list: https://github.com/rstacruz/nprogress#configuration
-		minimum: 0.16,
-		trickleSpeed: 100,
-		showSpinner: false
-	});
-
-	$: {
-		if ($navigating) {
-			NProgress.start();
-		}
-		if (!$navigating) {
-			NProgress.done();
-		}
+	import { prefetchRoutes } from '$app/navigation';
+	import { browser } from '$app/env';
+	let y;
+	if (browser) {
+		prefetchRoutes();
 	}
 
 	onMount(() => {
@@ -40,7 +28,10 @@
 </script>
 
 <Navbar />
+<ScrollToTop {y} />
 
 <slot />
-
+<Socials />
 <Footer />
+
+<svelte:window bind:scrollY={y} />

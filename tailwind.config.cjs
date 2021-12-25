@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 
 const config = {
 	mode: 'jit',
-	purge: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
 		extend: {
@@ -17,11 +17,11 @@ const config = {
 				14: '3.5rem',
 			},
 			fontFamily: {
-				sans: ['Inter', ...defaultTheme.fontFamily.sans],
+				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				primary: colors.sky,
-				gray: colors.trueGray,
+				gray: colors.neutral,
 			},
 			typography: (theme) => ({
 				DEFAULT: {
@@ -145,9 +145,6 @@ const config = {
 				},
 			}),
 		},
-	},
-	variants: {
-		typography: ['dark'],
 	},
 	plugins: [require("@tailwindcss/typography")]
 };
