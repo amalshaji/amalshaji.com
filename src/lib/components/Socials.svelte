@@ -4,7 +4,7 @@
 	>
 		<div>
 			<div class="text-2xl font-bold mb-2">My socials</div>
-			<p class="opacity-60">I write/tweet about my weird experiments</p>
+			<p class="opacity-60">I write about my weird experiments</p>
 		</div>
 		<ul class="flex justify-center gap-4">
 			<li>
