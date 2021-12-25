@@ -1,6 +1,6 @@
 <script>
 	const scrollToTop = () => {
-		window.scrollTo({ x: 0 });
+		window.scrollTo(0, 0);
 	};
 </script>
 
