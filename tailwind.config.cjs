@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 
 const config = {
 	mode: 'jit',
-	purge: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
 		extend: {
@@ -21,7 +21,7 @@ const config = {
 			},
 			colors: {
 				primary: colors.sky,
-				gray: colors.trueGray,
+				gray: colors.neutral,
 			},
 			typography: (theme) => ({
 				DEFAULT: {
@@ -145,9 +145,6 @@ const config = {
 				},
 			}),
 		},
-	},
-	variants: {
-		typography: ['dark'],
 	},
 	plugins: [require("@tailwindcss/typography")]
 };
