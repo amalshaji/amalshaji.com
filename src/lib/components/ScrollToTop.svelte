@@ -4,7 +4,7 @@
 	$: show = y > 50;
 </script>
 
-<div class="fixed {show ? '' : 'hidden'} flex-col gap-3 right-4 sm:right-8 bottom-8">
+<div class="fixed {show ? 'hidden md:flex' : 'hidden'} flex-col gap-3 right-4 sm:right-8 bottom-8">
 	<button
 		on:click={() => window.scrollTo({ top: 0 })}
 		aria-label="Scroll To Top"
