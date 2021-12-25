@@ -47,16 +47,12 @@
 </svelte:head>
 
 <h1 class="container px-6 pt-6 mx-auto text-3xl font-semibold">
-	Blog
-	<p class="prose text-lg font-semibold text-gray-500 dark:text-gray-400">
-		Use the search bar to filter posts by title or summary
-	</p>
 	<input
 		type="text"
 		bind:value={search}
 		on:input={filter}
-		class="px-2 py-1 text-lg w-full mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-md"
-		placeholder="Search articles"
+		class="px-2 py-1.5 text-lg w-full mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-md"
+		placeholder="Search posts"
 	/>
 </h1>
 
