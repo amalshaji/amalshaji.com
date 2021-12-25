@@ -24,28 +24,31 @@
 
 		<li class="grid place-items-center">
 			<span on:click={toggle_theme} class="toggle-dark-mode inline-block cursor-pointer">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-				>
-					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-					<circle cx="12" cy="12" r="3" />
-					<line x1="12" y1="5" x2="12" y2="5.01" />
-					<line x1="17" y1="7" x2="17" y2="7.01" />
-					<line x1="19" y1="12" x2="19" y2="12.01" />
-					<line x1="17" y1="17" x2="17" y2="17.01" />
-					<line x1="12" y1="19" x2="12" y2="19.01" />
-					<line x1="7" y1="17" x2="7" y2="17.01" />
-					<line x1="5" y1="12" x2="5" y2="12.01" />
-					<line x1="7" y1="7" x2="7" y2="7.01" />
-				</svg>
+				{#if $theme === 'light'}
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+					</svg>
+				{:else}
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+						/>
+					</svg>
+				{/if}
 			</span>
 		</li>
 	</ul>
