@@ -5,5 +5,4 @@ image: /images/ipwhere.png
 link: https://ipwhere.amalshaji.com
 github: https://github.com/amalshaji/ipwhere
 index: 6
-layout: project
 ---

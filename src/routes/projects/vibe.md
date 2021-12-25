@@ -5,5 +5,4 @@ image: /images/vibe.png
 link: https://vibe.pages.dev
 github: https://github.com/amalshaji/vibe
 index: 2
-layout: project
 ---

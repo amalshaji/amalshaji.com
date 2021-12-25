@@ -6,5 +6,4 @@ image: /images/fakeapi.png
 link: https://fakeapi.amalshaji.com
 github: https://github.com/amalshaji/website
 index: 3
-layout: project
 ---

@@ -5,5 +5,4 @@ image: /images/mockend.png
 link: https://mockend.in
 github:
 index: 1
-layout: project
 ---

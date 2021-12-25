@@ -7,5 +7,4 @@ image: /images/amalytics.png
 link: https://amalytics.deta.dev
 github: https://github.com/amalshaji/amalytics
 index: 5
-layout: project
 ---
