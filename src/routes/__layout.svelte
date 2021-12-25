@@ -2,6 +2,7 @@
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import Socials from '$lib/components/Socials.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
 	import NProgress from 'nprogress';
@@ -42,5 +43,5 @@
 <Navbar />
 
 <slot />
-
+<Socials />
 <Footer />

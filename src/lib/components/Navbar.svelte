@@ -1,155 +1,54 @@
-<script>
-	import { page } from '$app/stores';
-	import Theme from './Theme.svelte';
-	import { theme } from '$lib/store';
-	import { onMount } from 'svelte';
+<header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+	<a href="/" class="capitalize font-extrabfont-semibold text-2xl"> Amal Shaji </a>
+	<ul class="flex items-center gap-4 lg:gap-6">
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/projects">Projects</a></li>
+		<li><a href="/about">About</a></li>
 
-	$: path = $page.path;
-	let isopen = false;
-
-	onMount(() => {
-		$theme = localStorage.getItem('amalshaji_com_theme') || 'light';
-		$theme = $theme == 'dark' ? 'light' : 'dark';
-		toggle_theme();
-	});
-
-	const toggle_theme = () => {
-		const current = $theme;
-		$theme = $theme == 'dark' ? 'light' : 'dark';
-		const doc_main = document.getElementById('doc_main');
-		doc_main.classList.remove(current);
-		doc_main.classList.add($theme);
-		localStorage.setItem('amalshaji_com_theme', $theme);
-	};
-</script>
-
-<nav class="bg-gray-50 relative dark:bg-gray-800 px-6 py-6 flex justify-between items-center">
-	<a aria-label="Amal Shaji" class="text-3xl font-bold leading-none" href="/">
-		<img class="h-12" src="/images/favicon.svg" alt="Amal Shaji" width="auto" height="auto" />
-	</a>
-	<div class="lg:hidden flex">
-		<button aria-label="theme switch" class="p-3" on:click={toggle_theme}>
-			<Theme theme={$theme} />
-		</button>
-		<button
-			aria-label="open navbar on mobile"
-			on:click={() => (isopen = !isopen)}
-			class="navbar-burger flex items-center text-gray-400 p-3"
-		>
-			<svg
-				class="block h-4 w-4 fill-current"
-				viewBox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-			</svg>
-		</button>
-	</div>
-	<ul
-		class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
-	>
-		<li>
-			<a
-				class="{path == '/'
-					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
-				href="/">Home</a
-			>
+		<li class="grid place-items-center">
+			<span class="open-search inline-block cursor-pointer">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+					<circle cx="10" cy="10" r="7" />
+					<line x1="21" y1="21" x2="15" y2="15" />
+				</svg>
+			</span>
 		</li>
-
-		<li>
-			<a
-				class="{path.startsWith('/blog')
-					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
-				href="/blog">Blog</a
-			>
-		</li>
-
-		<li>
-			<a
-				class="{path == '/projects'
-					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
-				href="/projects">Projects</a
-			>
-		</li>
-
-		<li>
-			<a
-				class="{path == '/about'
-					? 'font-semibold text-blue-500'
-					: ''} text-sm text-gray-800 hover:text-gray-900 dark:hover:text-gray-50 hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-500 dark:border-gray-700 px-4 py-2 rounded-lg"
-				href="/about">About</a
-			>
+		<li class="grid place-items-center">
+			<span class="toggle-dark-mode inline-block cursor-pointer">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+					<circle cx="12" cy="12" r="3" />
+					<line x1="12" y1="5" x2="12" y2="5.01" />
+					<line x1="17" y1="7" x2="17" y2="7.01" />
+					<line x1="19" y1="12" x2="19" y2="12.01" />
+					<line x1="17" y1="17" x2="17" y2="17.01" />
+					<line x1="12" y1="19" x2="12" y2="19.01" />
+					<line x1="7" y1="17" x2="7" y2="17.01" />
+					<line x1="5" y1="12" x2="5" y2="12.01" />
+					<line x1="7" y1="7" x2="7" y2="7.01" />
+				</svg>
+			</span>
 		</li>
 	</ul>
-	<button aria-label="switch theme" class=" mx-2 hidden lg:block" on:click={toggle_theme}>
-		<Theme theme={$theme} />
-	</button>
-</nav>
-
-<div
-	class="{isopen
-		? 'block'
-		: 'hidden'} opacity-95 navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50"
->
-	<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" />
-	<nav
-		class="relative flex flex-col py-6 px-6 h-full w-full bg-white dark:bg-gray-900 border-r overflow-y-auto"
-	>
-		<div class="flex items-center mb-8">
-			<a class="mr-auto text-3xl font-bold leading-none" href="/" aria-label="Amal Shaji">
-				<img class="h-12" src="/images/favicon.svg" alt="Amal Shaji" width="auto" height="auto" />
-			</a>
-			<button class="navbar-close" on:click={() => (isopen = false)}>
-				<svg
-					class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M6 18L18 6M6 6l12 12"
-					/>
-				</svg>
-			</button>
-		</div>
-		<div>
-			<ul>
-				<li class="mb-1">
-					<a
-						on:click={() => (isopen = false)}
-						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-						href="/">Home</a
-					>
-				</li>
-				<li class="mb-1">
-					<a
-						on:click={() => (isopen = false)}
-						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-						href="/blog">Blog</a
-					>
-				</li>
-				<li class="mb-1">
-					<a
-						on:click={() => (isopen = false)}
-						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-						href="/projects">Projects</a
-					>
-				</li>
-				<li class="mb-1">
-					<a
-						on:click={() => (isopen = false)}
-						class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded"
-						href="/about">About</a
-					>
-				</li>
-			</ul>
-		</div>
-	</nav>
-</div>
+</header>

@@ -3,7 +3,7 @@ title: Adding Page Progress Bar To SvelteKit
 date: '2021-11-21'
 tags: ['svelte', 'sveltekit', 'nprogress']
 summary: Learn how to set up a youtube like page progress bar using nprogress
-# image: '/images/sapper-deta.png'
+image: '/images/sveltekit_nprogress.png'
 layout: blog
 ---
 
