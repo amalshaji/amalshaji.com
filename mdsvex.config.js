@@ -9,8 +9,7 @@ const dirname = path.resolve(fileURLToPath(import.meta.url), "../")
 const config = {
 	extensions: ['.svelte.md', '.md', '.svx'],
 	layout: {
-		blog: path.join(dirname, "./src/lib/layouts/blog.svelte"),
-		project: path.join(dirname, "./src/lib/layouts/project.svelte")
+		blog: path.join(dirname, "./src/lib/layouts/blog.svelte")
 	},
 	smartypants: {
 		dashes: 'oldschool'
