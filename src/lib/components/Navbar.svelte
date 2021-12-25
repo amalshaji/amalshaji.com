@@ -1,3 +1,20 @@
+<script>
+	import { theme } from '$lib/store';
+
+	const set_theme = () => {
+		const previous = $theme == 'dark' ? 'light' : 'dark';
+		const doc_main = document.getElementById('doc_main');
+		doc_main.classList.remove(previous);
+		doc_main.classList.add($theme);
+		localStorage.setItem('amalshaji_com_theme', $theme);
+	};
+
+	const toggle_theme = () => {
+		$theme = $theme === 'light' ? 'dark' : 'light';
+		set_theme();
+	};
+</script>
+
 <header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
 	<a href="/" class="capitalize font-extrabfont-semibold text-2xl"> Amal Shaji </a>
 	<ul class="flex items-center gap-4 lg:gap-6">
@@ -6,26 +23,7 @@
 		<li><a href="/about">About</a></li>
 
 		<li class="grid place-items-center">
-			<span class="open-search inline-block cursor-pointer">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="20"
-					height="20"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-				>
-					<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-					<circle cx="10" cy="10" r="7" />
-					<line x1="21" y1="21" x2="15" y2="15" />
-				</svg>
-			</span>
-		</li>
-		<li class="grid place-items-center">
-			<span class="toggle-dark-mode inline-block cursor-pointer">
+			<span on:click={toggle_theme} class="toggle-dark-mode inline-block cursor-pointer">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"

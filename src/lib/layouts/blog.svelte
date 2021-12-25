@@ -30,7 +30,7 @@
 		</div>
 	</div>
 {/if}
-<article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+<article class="prose dark:text-white lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
 	<h1 class="text-2xl font-semibold mb-2">{title}</h1>
 	<!-- <h5 class="text-sm flex items-center"> -->
 	<!-- <svg
