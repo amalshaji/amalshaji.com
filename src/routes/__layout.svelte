@@ -5,30 +5,11 @@
 	import Socials from '$lib/components/Socials.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
-	import NProgress from 'nprogress';
-	import { navigating } from '$app/stores';
 	import { prefetchRoutes } from '$app/navigation';
-	import 'nprogress/nprogress.css';
 	import { browser } from '$app/env';
 
 	if (browser) {
 		prefetchRoutes();
-	}
-
-	NProgress.configure({
-		// Full list: https://github.com/rstacruz/nprogress#configuration
-		minimum: 0.16,
-		trickleSpeed: 100,
-		showSpinner: false
-	});
-
-	$: {
-		if ($navigating) {
-			NProgress.start();
-		}
-		if (!$navigating) {
-			NProgress.done();
-		}
 	}
 
 	onMount(() => {

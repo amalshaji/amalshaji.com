@@ -12,7 +12,6 @@ specifiers:
   fast-glob: ^3.2.7
   front-matter-markdown: ^0.4.5
   mdsvex: ^0.9.8
-  nprogress: ^0.2.0
   postcss: ^8.4.5
   postcss-load-config: ^3.1.0
   prettier: ^2.4.1
@@ -36,7 +35,6 @@ devDependencies:
   fast-glob: 3.2.7
   front-matter-markdown: 0.4.5
   mdsvex: 0.9.8_svelte@3.44.2
-  nprogress: 0.2.0
   postcss: 8.4.5
   postcss-load-config: 3.1.0
   prettier: 2.5.0
@@ -1561,10 +1559,6 @@ packages:
   /normalize-url/6.1.0:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
     engines: {node: '>=10'}
-    dev: true
-
-  /nprogress/0.2.0:
-    resolution: {integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=}
     dev: true
 
   /nth-check/2.0.1:
