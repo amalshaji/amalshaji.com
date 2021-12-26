@@ -1,17 +1,8 @@
 <script context="module">
-	const allProjects = import.meta.glob('./*{md,svx}');
-
-	let body = [];
-	for (let path in allProjects) {
-		body.push(
-			allProjects[path]().then(({ metadata }) => {
-				return { path, metadata };
-			})
-		);
-	}
 	export const load = async () => {
-		const projects = await Promise.all(body);
-		projects.sort((a, b) => (a.metadata.index < b.metadata.index ? -1 : 1));
+		const res = await fetch('/projects/projects.json');
+		const projects = await res.json();
+		projects.sort((a, b) => (a.index < b.index ? -1 : 1));
 		return {
 			props: {
 				projects

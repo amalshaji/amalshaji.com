@@ -4,28 +4,28 @@
 </script>
 
 <div class="p-2">
-	<a href={project.metadata.link} target="_blank" rel="noreferrer">
-		{#if project.metadata.image}
+	<a href={project.link} target="_blank" rel="noreferrer">
+		{#if project.image}
 			<div class="relative">
 				<img
-					src={project.metadata.image}
-					alt={project.metadata.title}
+					src={project.image}
+					alt={project.title}
 					class="rounded-lg shadow-sm w-full h-64 object-cover"
 				/>
 				<div
 					class="absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5"
 				>
-					{#if project.metadata.date}
-						<Date date={project.metadata.date} />
+					{#if project.date}
+						<Date date={project.date} />
 					{/if}
 				</div>
 			</div>
 		{/if}
 		<div class="flex">
-			<div class="my-2 text-xl font-semibold">{project.metadata.title}</div>
-			{#if project.metadata.github}
+			<div class="my-2 text-xl font-semibold">{project.title}</div>
+			{#if project.github}
 				<a
-					href={project.metadata.github}
+					href={project.github}
 					class="my-auto hover:cursor-pointer"
 					target="_blank"
 					rel="noreferrer"
@@ -45,8 +45,8 @@
 				</a>
 			{/if}
 		</div>
-		{#if project.metadata.description}
-			<div class="">{project.metadata.description}</div>
+		{#if project.description}
+			<div class="">{project.description}</div>
 		{/if}
 	</a>
 </div>
