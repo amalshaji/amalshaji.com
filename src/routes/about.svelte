@@ -8,8 +8,8 @@
 </svelte:head>
 
 <div class="prose mx-6 my-2 md:my-8 md:mx-auto lg:w-3/4 dark:prose-dark">
-	<div class="text-2xl md:text-4xl font-semibold mt-4 mb-2">About Me</div>
-	<ul>
+	<div class="text-2xl md:text-4xl font-normal mt-4 mb-2">About Me</div>
+	<ul class="text-lg md:text-xl">
 		<li>I love Python, Go and Svelte</li>
 		<li>Interested in Rust and Solana</li>
 		<li>I occasionally write about my new findings</li>

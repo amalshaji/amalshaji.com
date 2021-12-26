@@ -1,8 +1,0 @@
----
-title: amalshaji.com
-description: Personal website built in Sveltekit and TailwindCSS
-image: /images/website.png
-link: https://amalshaji.com
-github: https://github.com/amalshaji/amalshaji.com
-index: 0
----
