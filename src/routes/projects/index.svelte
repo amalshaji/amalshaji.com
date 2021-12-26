@@ -1,5 +1,5 @@
 <script context="module">
-	export const load = async () => {
+	export const load = async ({ fetch }) => {
 		const res = await fetch('/projects/projects.json');
 		const projects = await res.json();
 		projects.sort((a, b) => (a.index < b.index ? -1 : 1));
