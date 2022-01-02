@@ -9,15 +9,19 @@ layout: blog
 
 ## Table Of Contents
 
-Adding a progress bar to your SPA or [Transitional Application](https://www.youtube.com/watch?v=860d8usGC0o) can significantly impact the user. For example, a fast-finishing progress bar can signal how fast the page work. The faster experience, [the more likely the user will spend time on your website](https://www.cloudflare.com/en-in/learning/performance/more/website-performance-conversion-rates/). In case your website is slow, it can give a message like *❝it's working but need more time to load❞*. 
+## Introduction
 
-> convince your users that something is happening!
+Adding a progress bar to your SPA or [Transitional Application](https://www.youtube.com/watch?v=860d8usGC0o) can significantly impact the user. For example, a fast-finishing progress bar can signal how fast the page work. The faster experience, [the more likely the user will spend time on your website](https://www.cloudflare.com/en-in/learning/performance/more/website-performance-conversion-rates/). In case your website is slow, it can give a message like *❝it's working but need more time to load❞*.
 
-Let's see how to add a page progress bar to your sveltekit application. We'll be using [nprogress](https://ricostacruz.com/nprogress/) to do so. 
+:::info tip
+convince your users that something is happening!
+:::
+
+Let's see how to add a page progress bar to your sveltekit application. We'll be using [nprogress](https://ricostacruz.com/nprogress/) to do so.
 
 ## Basic Setup
 
-Assuming you have a basic sveltekit project setup using `npm init svelte@next`, let's add a `__layout.svelte` and `about.svelte` routes to the project. 
+Assuming you have a basic sveltekit project setup using `npm init svelte@next`, let's add a `__layout.svelte` and `about.svelte` routes to the project.
 
 ```svelte
 <!-- src/routes/__layout.svelte -->
@@ -44,7 +48,7 @@ npm i -D nprogress
 
 ## Adding Progress Bar
 
-We will use the [$app/stores](https://kit.svelte.dev/docs#modules) module for our progress bar. Specifically, the `$navigating` store. 
+We will use the [$app/stores](https://kit.svelte.dev/docs#modules) module for our progress bar. Specifically, the `$navigating` store.
 
 > navigating is a [readable store](https://svelte.dev/tutorial/readable-stores). When navigating starts, its value is `{ from, to }`, where from and to both mirror the page store value. When navigating finishes, its value reverts to null - Official docs.
 

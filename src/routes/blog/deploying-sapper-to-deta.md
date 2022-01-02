@@ -9,6 +9,8 @@ layout: blog
 
 ## Table Of Contents
 
+## Introduction
+
 [Deta.sh](https://deta.sh) is a cloud platform that lets you run Python or Node applications for **free**. They also offer other products such as deta base, a NoSQL-based database, and deta drive for hosting files.
 
 > Hoping the `Golang` support comes to deta sooner. I'm a big fan of the service.

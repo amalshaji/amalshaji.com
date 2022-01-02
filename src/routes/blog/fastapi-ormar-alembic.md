@@ -9,6 +9,8 @@ layout: blog
 
 ## Table Of Contents
 
+## Introduction
+
 If you're reading this, chances are you are already familiar with FastAPI and SQLAlchemy. Still, I'll give a little introduction to both these libraries.
 
 [FastAPI](https://fastapi.tiangolo.com/)
@@ -28,7 +30,9 @@ If you have read my post, _[Pydantic for FastAPI](https://www.amalshaji.com/blog
 
 SQLAlchemy uses [alembic](https://alembic.sqlalchemy.org/) for migrations. Since ormar is built on top of sqlalchemy, we can use the same for migrations.
 
-> ⚠️ The project `pydantic` and my Twitter handle `@pydantic` are not associated, just saying.
+:::secondary Personal Note
+The project `pydantic` and my Twitter handle `@pydantic` are not associated, just saying.
+:::
 
 ## Setup the project
 

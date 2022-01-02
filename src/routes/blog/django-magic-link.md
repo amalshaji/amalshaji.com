@@ -9,13 +9,17 @@ layout: blog
 
 ## Table Of Contents
 
+## Introduction
+
 Magic link authentication is where the user is sent an email with a secure link. Once the user clicks the link, the application logs the user in. Magic link is a smart way to authenticate users because it takes away the need to set and remember a strong password.
 
 An important thing to take care of is that anyone can use the link to authenticate. So make sure you don't accidentally expose the link to others.
 
 Now let's see how we can set up magic link authentication in a Django app by leveraging the Django authentication system.
 
-> This is just an experiment to show how magic links work. Check out [django-sesame](https://github.com/aaugustin/django-sesame) for production.
+:::warning Read this
+This is just an experiment to show how magic links work. Check out [django-sesame](https://github.com/aaugustin/django-sesame) for production.
+:::
 
 ## Basic Setup
 
