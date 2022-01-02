@@ -13,7 +13,9 @@ layout: blog
 
 Adding a progress bar to your SPA or [Transitional Application](https://www.youtube.com/watch?v=860d8usGC0o) can significantly impact the user. For example, a fast-finishing progress bar can signal how fast the page work. The faster experience, [the more likely the user will spend time on your website](https://www.cloudflare.com/en-in/learning/performance/more/website-performance-conversion-rates/). In case your website is slow, it can give a message like *❝it's working but need more time to load❞*.
 
-> convince your users that something is happening!
+:::info tip
+convince your users that something is happening!
+:::
 
 Let's see how to add a page progress bar to your sveltekit application. We'll be using [nprogress](https://ricostacruz.com/nprogress/) to do so.
 

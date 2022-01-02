@@ -30,7 +30,9 @@ If you have read my post, _[Pydantic for FastAPI](https://www.amalshaji.com/blog
 
 SQLAlchemy uses [alembic](https://alembic.sqlalchemy.org/) for migrations. Since ormar is built on top of sqlalchemy, we can use the same for migrations.
 
-> ⚠️ The project `pydantic` and my Twitter handle `@pydantic` are not associated, just saying.
+:::secondary Personal Note
+The project `pydantic` and my Twitter handle `@pydantic` are not associated, just saying.
+:::
 
 ## Setup the project
 

@@ -78,7 +78,9 @@ db_name='postgres' db_pass='postgres' db_url=PostgresDsn('postgresql://postgres:
 - The environment variables are automatically loaded by name.
 - They are converted to the types specified by type hints.
 
-> By default, all variables are case-insensitive.
+:::note Note
+By default, all variables are case-insensitive.
+:::
 
 You can also use an alias for loading env values. For example, your env variable is `DATABASE_URL`, but you need to load it as `db_url`.
 

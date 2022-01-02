@@ -17,7 +17,9 @@ An important thing to take care of is that anyone can use the link to authentica
 
 Now let's see how we can set up magic link authentication in a Django app by leveraging the Django authentication system.
 
-> This is just an experiment to show how magic links work. Check out [django-sesame](https://github.com/aaugustin/django-sesame) for production.
+:::warning Read this
+This is just an experiment to show how magic links work. Check out [django-sesame](https://github.com/aaugustin/django-sesame) for production.
+:::
 
 ## Basic Setup
 
