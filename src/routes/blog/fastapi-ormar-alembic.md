@@ -9,6 +9,8 @@ layout: blog
 
 ## Table Of Contents
 
+## Introduction
+
 If you're reading this, chances are you are already familiar with FastAPI and SQLAlchemy. Still, I'll give a little introduction to both these libraries.
 
 [FastAPI](https://fastapi.tiangolo.com/)

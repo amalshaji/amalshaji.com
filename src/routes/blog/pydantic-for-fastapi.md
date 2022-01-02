@@ -9,6 +9,7 @@ image: /images/fastapi-pydantic.png
 
 ## Table Of Contents
 
+## Introduction
 
 [FastAPI](https://fastapi.tiangolo.com/) is a modern async framework for Python. According to [Python developers survey 2020](https://www.jetbrains.com/lp/python-developers-survey-2020/), FastAPI is the 3rd most popular web framework for python.
 
