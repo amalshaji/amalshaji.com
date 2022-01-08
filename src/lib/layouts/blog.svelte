@@ -3,7 +3,7 @@
 	import Date from '$lib/components/Date.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-
+	import ScrollProgressBar from '$lib/components/ScrollProgress.svelte';
 	export let title, summary, image, date;
 
 	onMount(() => {
@@ -11,6 +11,7 @@
 	});
 </script>
 
+<ScrollProgressBar height="3px" />
 <svelte:head>
 	<link rel="stylesheet" href="/code.css" />
 	<link rel="stylesheet" href="/infima.css" />
