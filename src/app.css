@@ -4,18 +4,15 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
-#nprogress .bar {
-	background: ##57ffe6 !important;
+.prose img {
+	border: 2px green solid;
+	border-radius: 5px;
 }
 
-#nprogress .peg {
-    box-shadow: 0 0 10px ##57ffe6, 0 0 5px ##57ffe6;
-}
-
-#nprogress .spinner-icon {
-    border-top-color: ##57ffe6;
-    border-left-color: ##57ffe6;
+.dark .prose img {
+	border: 2px yellow solid;
+	border-radius: 5px;
 }
