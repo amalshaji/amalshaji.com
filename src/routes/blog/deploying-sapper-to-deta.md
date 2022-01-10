@@ -118,7 +118,7 @@ module.exports = app
 
 To serve images properly in a NodeJS micro, add the following to a `.env` file and update the micro.
 
-```env
+```shell
 BINARY_CONTENT_TYPES=image/*
 ```
 
