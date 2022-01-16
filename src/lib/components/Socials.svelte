@@ -3,8 +3,7 @@
 		class="container px-6 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
 	>
 		<div>
-			<div class="text-2xl font-bold mb-2">My socials</div>
-			<p class="opacity-60">I write about my weird experiments</p>
+			<div class="text-2xl font-bold mb-2">Internet presence 👉🏻</div>
 		</div>
 		<ul class="flex justify-center gap-4">
 			<li>

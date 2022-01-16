@@ -10,8 +10,9 @@
 		);
 	}
 	export const load = async () => {
-		const posts = (await Promise.all(body)).slice(0, 5);
+		let posts = await Promise.all(body);
 		posts.sort((a, b) => (a.metadata.date > b.metadata.date ? -1 : 1));
+		posts = posts.slice(0, 3);
 		return {
 			props: {
 				posts
