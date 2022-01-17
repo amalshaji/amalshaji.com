@@ -6,7 +6,7 @@ image: '/images/sveltekit_nprogress.png'
 layout: blog
 ---
 
-## Table Of Conten
+## Table Of Contents
 
 ## Introduction
 
