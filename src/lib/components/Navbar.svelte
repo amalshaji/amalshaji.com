@@ -16,7 +16,7 @@
 </script>
 
 <header
-	class="flex justify-around md:justify-between gap-4 flex-wrap py-3 px-24 md:sticky bg-gray-100 top-0 mx-auto border-b shadow-lg z-10"
+	class="flex justify-around md:justify-between gap-4 flex-wrap py-3 px-24 md:sticky bg-gray-100 dark:bg-gray-800 top-0 mx-auto border-b dark:border-gray-800 shadow-lg z-10"
 >
 	<a href="/" class="capitalize font-extrabfont-semibold text-2xl"> Amal Shaji </a>
 	<ul class="flex items-center gap-4 lg:gap-6">
