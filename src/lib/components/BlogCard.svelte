@@ -3,7 +3,7 @@
 	import Date from './Date.svelte';
 </script>
 
-<div class="p-2">
+<div class="p-2 hover:scale-110 duration-150">
 	<a href={`/blog/${post.path.replace('.md', '').replace('.svx', '').replace('/blog/', '/')}`}>
 		{#if post.metadata.image}
 			<div class="relative">

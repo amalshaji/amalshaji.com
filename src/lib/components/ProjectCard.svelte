@@ -3,7 +3,7 @@
 	import Date from './Date.svelte';
 </script>
 
-<div class="p-2">
+<div class="p-2 hover:scale-110 duration-150 hover:border rounded-md">
 	<a href={project.link} target="_blank" rel="noreferrer">
 		{#if project.image}
 			<div class="relative">
