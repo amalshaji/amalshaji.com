@@ -47,7 +47,7 @@
 		</svg>
 		<div class="flex flex-col justify-between p-4 leading-normal">
 			<h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-				Freelance Writer (Software)
+				Freelance Writer
 			</h5>
 			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
 				I write, mostly for <a
