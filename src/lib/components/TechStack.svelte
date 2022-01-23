@@ -1,6 +1,6 @@
 <section class="mx-auto grid grid-cols-3 lg:grid-cols-4 gap-0 lg:gap-0">
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<g fill-rule="evenodd" clip-rule="evenodd"
@@ -18,7 +18,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<g fill="#00acd7" fill-rule="evenodd"
@@ -32,7 +32,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg xmlns="http://www.w3.org/2000/svg" class="w-24" viewBox="0 0 128 128"
 			><path
@@ -42,7 +42,7 @@
 		>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -53,7 +53,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -75,7 +75,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<defs
@@ -102,7 +102,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -136,7 +136,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -211,7 +211,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -224,7 +224,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -237,7 +237,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
 	>
 		<svg
 			class="w-24"
