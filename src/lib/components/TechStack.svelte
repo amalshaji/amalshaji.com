@@ -320,4 +320,14 @@
 			/>
 		</svg>
 	</div>
+	<div
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+	>
+		<svg fill="none" class="w-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154 154"
+			><circle cx="77" cy="77" fill="#05998b" r="60" /><path
+				d="M81.375 18.667l-38.75 70H77.5l-3.875 46.666 38.75-70H77.5z"
+				fill="#fff"
+			/></svg
+		>
+	</div>
 </section>
