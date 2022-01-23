@@ -51,7 +51,7 @@
 		type="text"
 		bind:value={search}
 		on:input={filter}
-		class="px-2 py-1.5 text-lg w-full mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-md"
+		class="px-2 py-1.5 text-lg w-full md:w-1/2 mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-md"
 		placeholder="Search posts"
 	/>
 </h1>

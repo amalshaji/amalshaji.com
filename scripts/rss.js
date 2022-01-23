@@ -21,9 +21,6 @@ ${posts
 <description>${post.metadata.summary}</description>
 <pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
 <author>amalshajid@gmail.com (Amal Shaji)</author>
-${post.metadata.tags.map(
-                (tag) => `<category>${tag}</category>`
-            ).join('')}
 </item>`
         )
         .join('')}

@@ -16,3 +16,7 @@ html {
 	border: 2px yellow solid;
 	border-radius: 5px;
 }
+
+img {
+	z-index: 0;
+}
