@@ -23,7 +23,9 @@
 			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
 				Cannot reveal the company. Working on a secret project (Jason Bourne level).
 			</p>
-			<p class="-top-1 right-2 md:absolute bg-yellow-400 w-36 md:w-auto shadow-md rounded-md px-2">
+			<p
+				class="-top-1 right-2 md:absolute bg-yellow-400 dark:text-white dark:bg-yellow-800 w-36 md:w-auto shadow-md rounded-md px-2"
+			>
 				2021 - present
 			</p>
 		</div>
@@ -57,7 +59,9 @@
 					class="hover:underline">testdriven.io</a
 				>
 			</p>
-			<p class="-top-1 right-2 md:absolute bg-yellow-400 w-36 md:w-auto shadow-md rounded-md px-2">
+			<p
+				class="-top-1 right-2 md:absolute bg-yellow-400 dark:text-white dark:bg-yellow-800 w-36 md:w-auto shadow-md rounded-md px-2"
+			>
 				2020 - present
 			</p>
 		</div>
