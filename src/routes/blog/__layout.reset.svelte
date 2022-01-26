@@ -1,7 +1,9 @@
 <script>
-	import '../app.css';
+	import '../../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import ScrollToTop from '$lib/components/ScrollToTop.svelte';
+	import CircularScrollProgressBar from '$lib/components/CircularScrollProgressBar.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
 	import { prefetchRoutes } from '$app/navigation';
@@ -26,7 +28,14 @@
 </script>
 
 <Navbar />
-
+<ScrollToTop {y} />
+<div
+	class="fixed {y > 50
+		? 'hidden md:flex scale-100 duration-150'
+		: 'scale-0 duration-150'} flex-col gap-3 right-2 sm:right-6 bottom-12"
+>
+	<CircularScrollProgressBar {y} />
+</div>
 <slot />
 
 <Footer />
