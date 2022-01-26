@@ -1,6 +1,6 @@
 <section class="mx-auto grid grid-cols-3 lg:grid-cols-4 gap-0 lg:gap-0">
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<g fill-rule="evenodd" clip-rule="evenodd"
@@ -18,7 +18,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<g fill="#00acd7" fill-rule="evenodd"
@@ -32,7 +32,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg xmlns="http://www.w3.org/2000/svg" class="w-24" viewBox="0 0 128 128"
 			><path
@@ -42,7 +42,7 @@
 		>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -53,7 +53,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -75,7 +75,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<defs
@@ -102,9 +102,9 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
-		<svg viewBox="0 0 128 128" class="w-24">
+		<svg viewBox="0 0 128 128" class="w-20">
 			<path
 				d="M21.4 97.6c0 1.8-1.5 3.5-3.5 3.5-1.5 0-2.8.4-4 1.3-1.3.8-2.2 1.9-3 3.2-1.6 2.1-2.4 4.6-2.7 5.5v12.5c0 1.9-1.6 3.5-3.6 3.5-1.9 0-3.5-1.6-3.5-3.5v-26c0-1.9 1.6-3.4 3.5-3.4 2 0 3.6 1.5 3.6 3.4v.5c.4-.5.9-1 1.4-1.3 2.2-1.4 5-2.6 8.3-2.6 2 0 3.5 1.5 3.5 3.4zm-1.9 13c.1-9 7-16.5 16.1-16.5 8.6 0 15.3 6.4 15.9 15.3v.3c0 .1 0 .5-.1.6-.2 1.6-1.6 2.6-3.4 2.6H27c.3 1.5 1.1 3.2 2.2 4.3 1.4 1.6 4 2.8 6.3 3 2.4.2 5.2-.4 6.8-1.6 1.4-1.4 4.1-1.3 4.9-.2.9.9 1.5 2.9 0 4.3-3.2 3-7.1 4.3-11.8 4.3-8.9 0-15.9-7.5-15.9-16.4zm7.1-3.2h18.6c-.7-2.6-4-6.5-9.7-7-5.6.2-8.3 4.3-8.9 7zm58.3 16.1c0 1.9-1.6 3.6-3.6 3.6-1.8 0-3.2-1.3-3.5-2.8-2.5 1.7-5.7 2.8-9 2.8-8.9 0-16-7.5-16-16.4 0-9 7.1-16.5 16-16.5 3.2 0 6.4 1.1 8.8 2.8V84.5c0-1.9 1.6-3.6 3.6-3.6s3.6 1.6 3.6 3.6v26.2l.1 12.8zm-16-22.2c-2.4 0-4.5 1-6.2 2.7-1.6 1.6-2.6 4-2.6 6.6 0 2.5 1 4.9 2.6 6.5 1.6 1.7 3.8 2.7 6.2 2.7 2.4 0 4.5-1 6.2-2.7 1.6-1.6 2.6-4 2.6-6.5 0-2.6-1-5-2.6-6.6-1.6-1.7-3.7-2.7-6.2-2.7zm28.6-15.4c0 2-1.5 3.6-3.6 3.6-2 0-3.6-1.6-3.6-3.6v-1.4c0-2 1.6-3.6 3.6-3.6s3.6 1.6 3.6 3.6v1.4zm0 11.9v25.7c0 2-1.5 3.6-3.6 3.6-2 0-3.6-1.6-3.6-3.6V97.8c0-2.1 1.6-3.6 3.6-3.6 2.1 0 3.6 1.5 3.6 3.6zm4.5 19.8c1.2-1.6 3.5-1.8 4.9-.5 1.7 1.4 4.7 3 7.2 2.9 1.8 0 3.4-.6 4.5-1.3.9-.8 1.2-1.4 1.2-2 0-.3-.1-.5-.2-.7-.1-.2-.3-.5-.9-.8-.9-.7-2.9-1.4-5.3-1.8h-.1c-2-.4-4-.9-5.7-1.7-1.8-.9-3.4-2-4.5-3.8-.7-1.2-1.1-2.6-1.1-4.1 0-3 1.7-5.6 3.9-7.2 2.3-1.6 5.1-2.4 8.1-2.4 4.5 0 7.8 2.2 9.9 3.6 1.6 1.1 2 3.2 1.1 4.9-1.1 1.6-3.2 2-4.9.9-2.1-1.4-4-2.4-6.1-2.4-1.6 0-3.1.5-4 1.2-.9.6-1.1 1.2-1.1 1.5 0 .3 0 .3.1.5.1.1.3.4.7.7.9.6 2.6 1.2 4.8 1.6l.1.1h.1c2.2.4 4.2 1 6.1 1.9 1.8.8 3.6 2 4.7 3.9.8 1.3 1.3 2.8 1.3 4.3 0 3.2-1.8 5.9-4.1 7.6-2.4 1.6-5.3 2.6-8.6 2.6-5.1-.1-9.1-2.4-11.7-4.5-1.4-1.3-1.6-3.5-.4-5z"
 				fill="#636466"
@@ -136,7 +136,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -211,20 +211,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
-	>
-		<svg viewBox="0 0 128 128" class="w-24">
-			<path
-				fill="#31251C"
-				d="M76.397 55.676c-2.737 0-4.775 1.344-4.775 4.579 0 2.437 1.343 4.129 4.628 4.129 2.784 0 4.676-1.641 4.676-4.23 0-2.934-1.693-4.478-4.529-4.478zm-5.471 22.84c-.648.795-1.294 1.64-1.294 2.637 0 1.989 2.536 2.587 6.021 2.587 2.885 0 6.816-.202 6.816-2.885 0-1.595-1.892-1.693-4.281-1.843l-7.262-.496zm14.725-22.69c.895 1.145 1.842 2.737 1.842 5.026 0 5.522-4.329 8.756-10.597 8.756-1.594 0-3.037-.198-3.932-.447l-1.642 2.637 4.875.297c8.608.549 13.682.798 13.682 7.413 0 5.723-5.024 8.955-13.682 8.955-9.006 0-12.438-2.289-12.438-6.218 0-2.24.996-3.431 2.737-5.076-1.643-.694-2.189-1.937-2.189-3.281 0-1.095.547-2.09 1.443-3.036.896-.944 1.891-1.891 3.084-2.985-2.438-1.194-4.278-3.781-4.278-7.464 0-5.721 3.781-9.65 11.393-9.65 2.14 0 3.435.197 4.578.498h9.703v4.228l-4.579.347zm13.332-9.04c-2.837 0-4.479-1.643-4.479-4.48 0-2.833 1.642-4.377 4.479-4.377 2.886 0 4.527 1.543 4.527 4.377.001 2.837-1.641 4.48-4.527 4.48zm-6.42 29.9v-3.929l2.539-.348c.696-.1.795-.249.795-.997V56.785c0-.546-.148-.896-.647-1.044l-2.687-.946.547-4.028h10.301v20.646c0 .798.048.896.796.997l2.538.348v3.929H92.563v-.001zm33.857-1.93c-2.141 1.043-5.274 1.99-8.112 1.99-5.92 0-8.158-2.386-8.158-8.011V55.7c0-.297 0-.497-.399-.497h-3.482v-4.428c4.38-.499 6.12-2.688 6.667-8.111h4.728v7.067c0 .347 0 .498.398.498h7.015v4.975h-7.413v11.89c0 2.935.697 4.079 3.383 4.079 1.395 0 2.836-.347 4.03-.795l1.343 4.378z"
-			/><path
-				fill="#F34F29"
-				d="M52.7 61.7L29.951 38.952a3.355 3.355 0 00-4.744 0l-4.724 4.724 5.991 5.992a3.983 3.983 0 014.1.956 3.988 3.988 0 01.947 4.125l5.775 5.775a3.988 3.988 0 014.125 6.593 3.992 3.992 0 01-6.516-4.342l-5.386-5.386-.001 14.174a3.992 3.992 0 011.056 6.401 3.993 3.993 0 11-4.339-6.518V57.141a3.99 3.99 0 01-2.167-5.236l-5.906-5.908L2.563 61.595a3.356 3.356 0 000 4.747L25.312 89.09a3.357 3.357 0 004.746 0L52.7 66.446a3.355 3.355 0 000-4.746z"
-			/><path fill="none" d="M1.58 37.928h124.84v52.143H1.58z" />
-		</svg>
-	</div>
-	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg viewBox="0 0 128 128" class="w-24">
 			<path
@@ -237,91 +224,7 @@
 		</svg>
 	</div>
 	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
-	>
-		<svg
-			class="w-24"
-			version="1.1"
-			id="Layer_1"
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:xlink="http://www.w3.org/1999/xlink"
-			x="0px"
-			y="0px"
-			viewBox="0 0 2568 643"
-			style="enable-background:new 0 0 2568 643;"
-			xml:space="preserve"
-		>
-			<style type="text/css">
-				.st0 {
-					fill: #ffffff;
-				}
-				.st1 {
-					fill-rule: evenodd;
-					clip-rule: evenodd;
-				}
-			</style>
-			<rect class="st0" width="2568" height="643" />
-			<path
-				d="M931.1,341h82.5c11.6,0,21,9.5,21,21.1c0,11.7-9.4,21.1-21,21.1h-99.5c-1.6,0-3.1,0.6-4.2,1.6l-30,25.9
-	c-4.6,4-1.8,11.5,4.2,11.5h124.5c0,0,0.1,0,0.1-0.1c0-0.1,0.1-0.1,0.1-0.1c1.6,0.1,3.1,0.2,4.7,0.2c33,0,59.8-26.9,59.8-60.1
-	c0-31.5-24.1-57.4-54.9-59.9c0,0-0.1,0-0.1-0.1c0-0.1,0-0.1-0.1-0.1h-88.8c-11.6,0-21-9.5-21-21.1c0-11.7,9.4-21.1,21-21.1h99.3
-	c1.6,0,3.2-0.6,4.4-1.7l27.9-25.9c4.4-4.1,1.5-11.4-4.4-11.4H931.1c0,0,0,0,0,0s0,0,0,0c-0.5,0-1.1,0-1.6,0
-	c-33,0-59.8,26.9-59.8,60.1c0,33.2,26.8,60.1,59.8,60.1C930,341,930.5,341,931.1,341C931.1,341,931.1,341,931.1,341
-	C931.1,341,931.1,341,931.1,341z"
-			/>
-			<path
-				d="M1411.3,220.7c-3.6,0-6.5,2.9-6.5,6.6v188.4c0,3.6,2.9,6.6,6.5,6.6h151c1.8,0,3.5-0.8,4.8-2.1l18.9-20.3
-	c3.9-4.2,1-11.1-4.8-11.1h-131.8c-3.6,0-6.5-2.9-6.5-6.6v-155c0-3.6-2.9-6.6-6.5-6.6H1411.3z"
-			/>
-			<path
-				class="st1"
-				d="M1169.5,220.7C1169.5,220.7,1169.5,220.7,1169.5,220.7C1169.5,220.8,1169.5,220.8,1169.5,220.7
-	c-19.3,0.9-34.8,16.4-35.7,35.7c0,0,0,0,0,0s0,0,0,0c0,0,0,0,0,0v126.7c0,0,0,0,0,0s0,0,0,0c0,0.5,0,1.1,0,1.6
-	c0,20.1,15.8,36.5,35.7,37.3c0,0,0,0,0,0v0l0,0c0,0,0,0,0,0h137c0,0,0,0,0,0l0,0v0l0,0c19.8-0.9,35.7-17.3,35.7-37.3
-	c0-0.5,0-1.1,0-1.6c0,0,0,0,0,0s0,0,0,0V256.5c0,0,0,0,0,0s0,0,0,0c-0.8-19.3-16.3-34.9-35.6-35.7c0,0,0,0,0,0c0,0,0,0,0,0H1169.5z
-	 M1195.1,256.5L1195.1,256.5L1195.1,256.5C1195,256.5,1195,256.5,1195.1,256.5c-12.1,0.5-21.8,10.3-22.3,22.5c0,0,0,0,0,0
-	c0,0,0,0,0,0v79.7c0,0,0,0,0,0c0,0,0,0,0,0c0,0.3,0,0.7,0,1c0,12.6,9.9,23,22.3,23.5c0,0,0,0,0,0l0,0v0v0h85.9v0l0,0v0c0,0,0,0,0,0
-	c12.4-0.5,22.3-10.9,22.3-23.5c0-0.3,0-0.7,0-1v0v0l0,0c0,0,0,0,0,0V279c0,0,0,0,0,0s0,0,0,0c-0.5-12.2-10.2-21.9-22.3-22.5
-	c0,0,0,0,0,0v0v0l0,0H1195.1z"
-			/>
-			<path
-				class="st1"
-				d="M1805.5,415.7c0,3.6,2.9,6.6,6.5,6.6h25.6c3.6,0,6.5-2.9,6.5-6.6V259.8c0,0,0,0,0,0l0,0l0,0c0,0,0,0,0,0
-	c0-0.5,0-1.1,0-1.6c0-20.1-15.7-36.5-35.3-37.3c0,0,0,0,0,0c0,0,0,0,0,0h-131.5c0,0,0,0,0,0c0,0,0,0,0,0c-0.5,0-1.1,0-1.6,0
-	c-20.4,0-36.9,16.7-36.9,37.4c0,0.5,0,1.1,0,1.6c0,0,0,0,0,0s0,0,0,0v155.9c0,3.6,2.9,6.6,6.5,6.6h25.6c3.6,0,6.5-2.9,6.5-6.6v-64.9
-	c0-3.6,2.9-6.6,6.5-6.6h115.4c3.6,0,6.5,2.9,6.5,6.6V415.7z M1677.2,308.4V276c0-12.6,10.1-22.8,22.5-22.8h83.4
-	c12.4,0,22.5,10.2,22.5,22.8v32.4c0,3.6-2.9,6.6-6.5,6.6h-115.4C1680.1,315,1677.2,312.1,1677.2,308.4z"
-			/>
-			<path
-				class="st1"
-				d="M2346,422.3c-3.6,0-6.5-2.9-6.5-6.6v-64.9c0-3.6-2.9-6.6-6.5-6.6h-116.7c-3.6,0-6.5,2.9-6.5,6.6v64.9
-	c0,3.6-2.9,6.6-6.5,6.6h-25.8c-3.6,0-6.5-2.9-6.5-6.6V259.8v0v0c0,0,0,0,0,0c0,0,0,0,0,0c0-0.5,0-1.1,0-1.6
-	c0-20.6,16.7-37.4,37.3-37.4c0.5,0,1.1,0,1.6,0c0,0,0,0,0,0c0,0,0,0,0,0h132.9c0,0,0,0,0,0c0,0,0,0,0,0
-	c19.8,0.9,35.7,17.3,35.7,37.3c0,0.5,0,1.1,0,1.6c0,0,0,0,0,0s0,0,0,0c0,0,0,0,0,0v155.9c0,3.6-2.9,6.6-6.5,6.6H2346z M2209.8,276
-	v32.4c0,3.6,2.9,6.6,6.5,6.6H2333c3.6,0,6.5-2.9,6.5-6.6V276c0-12.6-10.2-22.8-22.7-22.8h-84.3
-	C2219.9,253.2,2209.8,263.4,2209.8,276z"
-			/>
-			<path
-				d="M1940.5,220.7c1.9,0,3.7,0.8,4.9,2.3l114.8,136.9c3.9,4.6,11.4,1.8,11.4-4.3V227.3c0-3.6,2.9-6.6,6.5-6.6h25.6
-	c3.6,0,6.5,2.9,6.5,6.6v188.4c0,3.6-2.9,6.6-6.5,6.6h-31.8c-0.1,0-0.2-0.1-0.2-0.2c0-0.1,0-0.1-0.1-0.2l-116.8-135.9
-	c-3.9-4.6-11.4-1.7-11.4,4.3v125.5c0,3.6-2.9,6.6-6.5,6.6h-25.8c-3.6,0-6.5-2.9-6.5-6.6V227.3c0-3.6,2.9-6.6,6.5-6.6H1940.5z"
-			/>
-			<path
-				d="M274.4,429.2c3.2-3.2,7.5-5,12-5h416.5c7.6,0,11.4,9.2,6,14.5L626.6,521c-3.2,3.2-7.5,5-12,5H198.1c-7.6,0-11.4-9.2-6-14.5
-	L274.4,429.2z"
-			/>
-			<path
-				d="M274.4,122c3.2-3.2,7.5-5,12-5h416.5c7.6,0,11.4,9.2,6,14.5l-82.3,82.2c-3.2,3.2-7.5,5-12,5H198.1c-7.6,0-11.4-9.2-6-14.5
-	L274.4,122z"
-			/>
-			<path
-				d="M626.6,274.6c-3.2-3.2-7.5-5-12-5H198.1c-7.6,0-11.4,9.2-6,14.5l82.3,82.2c3.2,3.2,7.5,5,12,5h416.5c7.6,0,11.4-9.2,6-14.5
-	L626.6,274.6z"
-			/>
-		</svg>
-	</div>
-	<div
-		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-800"
+		class="flex flex-row my-4 px-4 transform hover:-translate-y-2 duration-150 items-center bg-white rounded-lg border hover:shadow-md w-24 lg:w-32 dark:border-gray-700 dark:bg-gray-100"
 	>
 		<svg fill="none" class="w-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154 154"
 			><circle cx="77" cy="77" fill="#05998b" r="60" /><path
