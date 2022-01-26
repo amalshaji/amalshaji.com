@@ -26,7 +26,11 @@
 	});
 </script>
 
-<div class="inline-flex items-center justify-center overflow-hidden rounded-full">
+<button
+	on:click={() => window.scrollTo({ top: 0 })}
+	aria-label="Scroll To Top"
+	class="inline-flex items-center justify-center overflow-hidden rounded-full"
+>
 	<svg class="w-12 h-16">
 		<circle
 			class="text-gray-300"
@@ -34,11 +38,11 @@
 			stroke="currentColor"
 			fill="transparent"
 			r="15"
-			cx="20"
-			cy="20"
+			cx="21"
+			cy="21"
 		/>
 		<circle
-			class="text-red-600"
+			class={scrolled > 70 ? 'text-red-600' : 'text-green-600'}
 			stroke-width="3"
 			stroke-dasharray={circumference}
 			stroke-dashoffset={circumference - (scrolled / 100) * circumference}
@@ -46,10 +50,24 @@
 			stroke="currentColor"
 			fill="transparent"
 			r="15"
-			cx="20"
-			cy="20"
+			cx="21"
+			cy="21"
 		/>
 	</svg>
-</div>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		class="h-5 w-5 absolute bottom-8 right-4 dark:text-white"
+		fill="none"
+		viewBox="0 0 25 25"
+		stroke="currentColor"
+	>
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="2"
+			d="M5 10l7-7m0 0l7 7m-7-7v18"
+		/>
+	</svg>
+</button>
 
 <svelte:window on:scroll={watchScrolling} />
