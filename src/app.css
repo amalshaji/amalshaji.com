@@ -17,6 +17,14 @@ html {
 	border-radius: 5px;
 }
 
+.prose code:before {
+	content: '';
+}
+
+.prose code:after {
+	content: '';
+}
+
 img {
 	z-index: 0;
 }
