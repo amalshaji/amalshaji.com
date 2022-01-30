@@ -4,8 +4,22 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	export let title, summary, image, date;
+
+	const initial_scroll = () => {
+		const hashed_url = window.location.hash;
+		if (hashed_url !== '') {
+			try {
+				const topPos = document.getElementById(hashed_url.replace('#', '')).offsetTop;
+				window.scrollTo(0, topPos);
+			} catch (_) {
+				window.scrollTo(0, 0);
+			}
+		} else {
+		}
+	};
+
 	onMount(() => {
-		window.scrollTo(0, 0);
+		initial_scroll();
 	});
 </script>
 
