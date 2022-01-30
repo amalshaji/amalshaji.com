@@ -15,6 +15,7 @@
 				window.scrollTo(0, 0);
 			}
 		} else {
+			window.scrollTo(0, 0);
 		}
 	};
 
@@ -24,7 +25,6 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="/code.css" />
 	<link rel="stylesheet" href="/infima.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,8 +43,10 @@
 		</div>
 	</div>
 {/if}
-<div class="w-full mx-auto">
-	<article class="prose text-black dark:text-white lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+<div class="max-w-6xl mx-auto">
+	<article
+		class="prose prose-headings:font-semibold text-black dark:text-white lg:prose-lg mx-auto my-8 dark:prose-dark px-4"
+	>
 		<h1>{title}</h1>
 		<slot />
 	</article>
