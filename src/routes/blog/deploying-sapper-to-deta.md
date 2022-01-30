@@ -52,20 +52,20 @@ npm install express
 The server setup is defined in `src/server.js`. Replace the polka with express and modify to support both dev and prod environment.
 
 ```js
-import express from 'express'
-import compression from 'compression'
-import * as sapper from '@sapper/server'
+import express from 'express';
+import compression from 'compression';
+import * as sapper from '@sapper/server';
 
-const { PORT, NODE_ENV } = process.env
-const dev = NODE_ENV === 'development'
+const { PORT, NODE_ENV } = process.env;
+const dev = NODE_ENV === 'development';
 
-const app = express()
-app.use(compression({ threshold: 0 }), express.static('static'), sapper.middleware())
+const app = express();
+app.use(compression({ threshold: 0 }), express.static('static'), sapper.middleware());
 
 if (dev) {
-  app.listen(PORT || 3000)
+	app.listen(PORT || 3000);
 } else {
-  module.exports = app
+	module.exports = app;
 }
 ```
 
@@ -82,20 +82,20 @@ npm run build
 Sapper builds the application into the `__sapper__` directory. Next, inspect the server code in `__sapper__/build/server/server.js`. Especially the last few lines.
 
 ```js
-const { PORT, NODE_ENV } = process.env
-const dev = NODE_ENV === 'development'
+const { PORT, NODE_ENV } = process.env;
+const dev = NODE_ENV === 'development';
 
-const app = express__default['default']()
+const app = express__default['default']();
 app.use(
-  compression__default['default']({ threshold: 0 }),
-  express__default['default'].static('static'),
-  middleware()
-)
+	compression__default['default']({ threshold: 0 }),
+	express__default['default'].static('static'),
+	middleware()
+);
 
 if (dev) {
-  app.listen(PORT || 3000)
+	app.listen(PORT || 3000);
 } else {
-  module.exports = app
+	module.exports = app;
 }
 ```
 
@@ -108,9 +108,9 @@ At this point, this looks like a hack to make the code work. If you have a bette
 Create a new `index.js` in the root of the project.
 
 ```js
-const app = require('./__sapper__/build/server/server')
+const app = require('./__sapper__/build/server/server');
 
-module.exports = app
+module.exports = app;
 ```
 
 ## Fix the image problem

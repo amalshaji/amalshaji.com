@@ -14,7 +14,7 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			fallback: null,
-			precompress: true,
+			precompress: true
 		})
 	},
 
@@ -22,7 +22,7 @@ const config = {
 		preprocess({
 			postcss: true
 		}),
-		mdsvex(mdsvexConfig),
+		mdsvex(mdsvexConfig)
 	]
 };
 

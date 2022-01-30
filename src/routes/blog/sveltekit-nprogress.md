@@ -10,7 +10,7 @@ layout: blog
 
 ## Introduction
 
-Adding a progress bar to your SPA or [Transitional Application](https://www.youtube.com/watch?v=860d8usGC0o) can significantly impact the user. For example, a fast-finishing progress bar can signal how fast the page work. The faster experience, [the more likely the user will spend time on your website](https://www.cloudflare.com/en-in/learning/performance/more/website-performance-conversion-rates/). In case your website is slow, it can give a message like *❝it's working but need more time to load❞*.
+Adding a progress bar to your SPA or [Transitional Application](https://www.youtube.com/watch?v=860d8usGC0o) can significantly impact the user. For example, a fast-finishing progress bar can signal how fast the page work. The faster experience, [the more likely the user will spend time on your website](https://www.cloudflare.com/en-in/learning/performance/more/website-performance-conversion-rates/). In case your website is slow, it can give a message like _❝it's working but need more time to load❞_.
 
 :::info tip
 convince your users that something is happening!
@@ -26,8 +26,8 @@ Assuming you have a basic sveltekit project setup using `npm init svelte@next`, 
 <!-- src/routes/__layout.svelte -->
 
 <nav>
-  <a href="/">Index</a>
-  <a href="/about">About</a>
+	<a href="/">Index</a>
+	<a href="/about">About</a>
 </nav>
 
 <slot />
@@ -55,38 +55,38 @@ Update the `__layout.svelte` like so:
 
 ```svelte
 <script>
-  import NProgress from 'nprogress'
-  import {navigating} from '$app/stores'
-  
-  // NProgress css
-  import 'nprogress/nprogress.css'
+	import NProgress from 'nprogress';
+	import { navigating } from '$app/stores';
 
-  NProgress.configure({
+	// NProgress css
+	import 'nprogress/nprogress.css';
+
+	NProgress.configure({
 		// Full list: https://github.com/rstacruz/nprogress#configuration
-		minimum: 0.16,
-	})
-  
-  $: {
-    if ($navigating) {
-      NProgress.start();
-    }
-    if (!$navigating) {
-      NProgress.done();
-    }
-  }
+		minimum: 0.16
+	});
+
+	$: {
+		if ($navigating) {
+			NProgress.start();
+		}
+		if (!$navigating) {
+			NProgress.done();
+		}
+	}
 </script>
 
 <nav>
-  <a href="/">Index</a>
-  <a href="/about">About</a>
+	<a href="/">Index</a>
+	<a href="/about">About</a>
 </nav>
 
 <slot />
 ```
 
-Notice the `$: { ... }` declaration. It is a [reactive declaration](https://svelte.dev/tutorial/reactive-declarations) is svelte. Every time something in the page changes, the code block runs. 
+Notice the `$: { ... }` declaration. It is a [reactive declaration](https://svelte.dev/tutorial/reactive-declarations) is svelte. Every time something in the page changes, the code block runs.
 
-Before testing out your app, navigate to dev tools and set the page to load from a slow connection. 
+Before testing out your app, navigate to dev tools and set the page to load from a slow connection.
 
 ![simulate slow network](https://cdn.hashnode.com/res/hashnode/image/upload/v1637475462878/vamvl0QbO.png)
 
@@ -94,18 +94,16 @@ For some reason your throttling is not working, (I used stackblitz and it wasn't
 
 ```svelte
 <script context="module">
-  export async function load() {
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    return {
-      props: {
-        
-      }
-    }
-  }
+	export async function load() {
+		await new Promise((resolve) => setTimeout(resolve, 2000));
+		return {
+			props: {}
+		};
+	}
 </script>
 ```
 
-Basically, it creates a 2-second delay in the pages where it is added. Go back to your application and test it out. 
+Basically, it creates a 2-second delay in the pages where it is added. Go back to your application and test it out.
 
 ## Demo
 
