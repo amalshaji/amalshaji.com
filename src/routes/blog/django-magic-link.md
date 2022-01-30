@@ -101,12 +101,12 @@ Create the corresponding templates in the `templates` folder in the root directo
 <!-- templates/base.html -->
 
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    {% block content %}{% endblock content %}
-  </body>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		{% block content %}{% endblock content %}
+	</body>
 </html>
 ```
 
@@ -117,9 +117,9 @@ Create the corresponding templates in the `templates` folder in the root directo
 <h1>Login</h1>
 <br />
 <form method="post">
-  {% csrf_token %}
-  <input type="email" name="email" required />
-  <input type="submit" value="Send Login Instructions" />
+	{% csrf_token %}
+	<input type="email" name="email" required />
+	<input type="submit" value="Send Login Instructions" />
 </form>
 {% endblock content %}
 ```
