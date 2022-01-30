@@ -1,20 +1,11 @@
 repos:
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: 'v8.8.0'
-    hooks:
-      - id: eslint
-        args:
-          - --ignore-path
-          - .gitignore
-          - .
-
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: 'v2.5.1'
     hooks:
       - id: prettier
         args:
           - --ignore-path
-          - .gitignore
+          - .lintformatignore
           - --write
           - --plugin-search-dir
           - .
