@@ -22,7 +22,7 @@
 
 <script>
 	import Seo from '$lib/components/SEO.svelte';
-	import BlogCard from '$lib/components/BlogCard.svelte';
+	import BlogCardUpdated from '$lib/components/BlogCardUpdated.svelte';
 	export let posts;
 	let search = '',
 		filteredPosts = [];
@@ -46,18 +46,38 @@
 	<Seo title="Blog | Amal Shaji" url="/blog" />
 </svelte:head>
 
-<h1 class="container px-6 pt-6 mx-auto text-3xl font-semibold">
-	<input
-		type="text"
-		bind:value={search}
-		on:input={filter}
-		class="px-2 py-1.5 text-lg w-full md:w-1/2 mt-4 mb-8 border border-gray-400 dark:text-gray-400 dark:bg-gray-800 focus:border-yellow-500 rounded-md"
-		placeholder="Search posts"
-	/>
-</h1>
-
-<div class="container p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-	{#each filteredPosts as post}
-		<BlogCard {post} />
-	{/each}
-</div>
+<section
+	class="py-24 bg-white"
+	style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: left top;"
+>
+	<div class="container px-4 mx-auto">
+		<div class="md:max-w-5xl mx-auto mb-8 md:mb-16 text-center">
+			<span
+				class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-full shadow-sm"
+				>Blog</span
+			>
+			<h3 class="mb-4 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-bold">
+				I write about python, django, svelte. Currently I'm learning typescript and react.
+			</h3>
+			<div class="relative mx-auto md:w-80">
+				<img
+					class="absolute top-1/2 left-4 transform -translate-y-1/2"
+					src="flex-ui-assets/elements/blog/search.svg"
+					alt=""
+				/>
+				<input
+					class="w-full py-3 pl-12 pr-4 text-coolGray-900 leading-tight placeholder-coolGray-500 border border-coolGray-200 rounded-lg shadow-xsm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+					type="text"
+					placeholder="Search"
+					bind:value={search}
+					on:input={filter}
+				/>
+			</div>
+		</div>
+		<div class="flex flex-wrap -mx-4 mb-12 md:mb-20">
+			{#each filteredPosts as post}
+				<BlogCardUpdated {post} />
+			{/each}
+		</div>
+	</div>
+</section>
