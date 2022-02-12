@@ -11,6 +11,7 @@
 					src={post.metadata.image}
 					alt={post.metadata.title}
 					class="rounded-lg shadow-sm w-full h-52 object-cover"
+					loading="lazy"
 				/>
 				<div
 					class="absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5"
