@@ -23,8 +23,12 @@
 	<Seo title="Projects | Amal Shaji" url="/projects" />
 </svelte:head>
 
-<div class="container p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-	{#each projects as project}
-		<ProjectCard {project} />
-	{/each}
+<div class="relative pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+	<div class="relative max-w-7xl mx-auto">
+		<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+			{#each projects as project}
+				<ProjectCard {project} />
+			{/each}
+		</div>
+	</div>
 </div>

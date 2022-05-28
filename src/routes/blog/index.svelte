@@ -46,38 +46,36 @@
 	<Seo title="Blog | Amal Shaji" url="/blog" />
 </svelte:head>
 
-<section
-	class="py-24 bg-white"
-	style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-repeat: no-repeat; background-position: left top;"
->
+<section class="py-8 bg-white">
 	<div class="container px-4 mx-auto">
-		<div class="md:max-w-5xl mx-auto mb-8 md:mb-16 text-center">
+		<div class="md:max-w-5xl mx-auto text-center">
 			<span
-				class="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-full shadow-sm"
+				class="inline-block py-px px-2 mb-4 text-xs leading-5 text-indigo-500 bg-indigo-100 font-medium uppercase rounded-full shadow-sm"
 				>Blog</span
 			>
-			<h3 class="mb-4 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-bold">
-				I write about python, django, svelte. Currently I'm learning typescript and react.
+			<h3 class="mb-8 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-semibold">
+				I write about python, svelte.
 			</h3>
-			<div class="relative mx-auto md:w-80">
-				<img
-					class="absolute top-1/2 left-4 transform -translate-y-1/2"
-					src="flex-ui-assets/elements/blog/search.svg"
-					alt=""
-				/>
-				<input
-					class="w-full py-3 pl-12 pr-4 text-coolGray-900 leading-tight placeholder-coolGray-500 border border-coolGray-200 rounded-lg shadow-xsm focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
-					type="text"
-					placeholder="Search"
-					bind:value={search}
-					on:input={filter}
-				/>
+			<div>
+				<div class="mt-4">
+					<input
+						type="text"
+						placeholder="Search term"
+						bind:value={search}
+						on:input={filter}
+						class="shadow-md border py-3 pl-12 w-full sm:w-1/2 mx-auto  focus:ring-indigo-500 focus:border-indigo-500 block rounded-md"
+					/>
+				</div>
 			</div>
 		</div>
-		<div class="flex flex-wrap -mx-4 mb-12 md:mb-20">
-			{#each filteredPosts as post}
-				<BlogCardUpdated {post} />
-			{/each}
+		<div class="relative pb-20 px-4 sm:px-6 lg:pb-28 lg:px-8">
+			<div class="relative max-w-7xl mx-auto">
+				<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+					{#each filteredPosts as post}
+						<BlogCardUpdated {post} />
+					{/each}
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
