@@ -14,7 +14,10 @@ const config = {
 			assets: 'build',
 			fallback: null,
 			precompress: true
-		})
+		}),
+		prerender: {
+			default: true
+		}
 	},
 
 	preprocess: [
