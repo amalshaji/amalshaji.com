@@ -79,10 +79,6 @@
 		<div class="text-lg max-w-prose mx-auto">
 			<h1>
 				<span
-					class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase"
-					>Introducing</span
-				>
-				<span
 					class="mt-2 block text-3xl text-center leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl"
 					>Hi, I'm Amal</span
 				>
