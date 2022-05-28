@@ -57,6 +57,28 @@ const projectData = [
 		link: 'https://amalshaji.com',
 		github: 'https://github.com/amalshaji/amalshaji.com',
 		index: 0
+	},
+	{
+		title: 'UPay',
+		description: 'Generate UPI payment collect links',
+		image: '/images/upay.png',
+		link: 'https://upay.cf',
+		index: -1
+	},
+	{
+		title: 'Phoney',
+		description:
+			'Generate fake API/CSV. The API data persists, so it can be appended, updated and deleted',
+		image: '/images/phoney.png',
+		link: 'https://phoney.ml',
+		index: -2
+	},
+	{
+		title: 'Pytoml',
+		description: 'Write, run and share python code right in your browser',
+		image: '/images/pytoml.png',
+		link: 'https://pyto.ml',
+		index: -3
 	}
 ];
 
