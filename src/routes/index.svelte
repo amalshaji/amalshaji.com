@@ -98,8 +98,8 @@
 				time.
 			</p>
 			<p>
-				I mainly write python code. I also work with svelte, react, go, rust (I don't write much).
-				I'm also very much interested in developer tooling (never got a change to build any).
+				I mainly write python code. However, I also work with svelte, react, go, and rust (I don't
+				write much). I'm also interested in developer tooling (I never got a chance to build any).
 			</p>
 			<p>Feel free to contact me:</p>
 			<ul>
