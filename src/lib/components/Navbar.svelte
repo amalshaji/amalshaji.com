@@ -1,6 +1,7 @@
 <script>
 	import { theme } from '$lib/store';
-	import { page } from '$app/stores';
+	import { AnimatedCounter } from '@benzara/svelte-animated-counter';
+	const names = ['Amal Shaji', 'Amalytics', 'Supreme Leader'];
 	const set_theme = () => {
 		const previous = $theme == 'dark' ? 'light' : 'dark';
 		const doc_main = document.getElementById('doc_main');
@@ -81,19 +82,31 @@
 			</div>
 			<div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
 				<a href="/" class="flex-shrink-0 flex items-center">
-					<span class="font-normal text-2xl">Amal Shaji</span>
+					<span
+						class="mt-2 block text-2xl text-center leading-8 font-normal tracking-tight text-gray-900"
+						><AnimatedCounter
+							values={names}
+							class="custom-counter"
+							interval={1000}
+							startImmediately={false}
+							direction="up"
+							loop={true}
+							ease="cubic-bezier(0.25, 0.1, 0.25, 1)"
+							initialValue="python"
+						/></span
+					>
 				</a>
 				<div class="hidden sm:ml-6 sm:flex sm:space-x-8">
 					<!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-900 hover:border-gray-300 hover:text-gray-700" -->
 					<a
 						href="/blog"
-						class="text-gray-900 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+						class="text-gray-900 border-transparent inline-flex items-center px-1 pt-1 border-b-2 font-medium text-base"
 					>
 						Blog
 					</a>
 					<a
 						href="/projects"
-						class="text-gray-900 border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+						class="text-gray-900 border-transparent inline-flex items-center px-1 pt-1 border-b-2 font-medium text-base"
 					>
 						Projects
 					</a>
@@ -101,7 +114,7 @@
 						href="https://github.com/amalshaji"
 						target="_blank"
 						rel="noreferrer"
-						class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+						class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 font-medium text-base"
 					>
 						GitHub
 					</a>
@@ -109,7 +122,7 @@
 						href="https://twitter.com/pydantic"
 						target="_blank"
 						rel="noreferrer"
-						class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+						class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 font-medium text-base"
 					>
 						Twitter
 					</a>
