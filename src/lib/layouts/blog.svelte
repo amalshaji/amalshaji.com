@@ -43,9 +43,9 @@
 		</div>
 	</div>
 {/if}
-<div class="max-w-6xl mx-auto">
+<div class="max-w-6xl mx-auto break-words">
 	<article
-		class="prose prose-headings:font-semibold text-black dark:text-white lg:prose-lg mx-auto my-8 dark:prose-dark px-4"
+		class="prose prose-headings:font-semibold text-black dark:text-white lg:prose-lg mx-auto px-4 md:px-0 my-8 dark:prose-dark"
 	>
 		<h1>{title}</h1>
 		<slot />

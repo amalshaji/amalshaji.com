@@ -75,14 +75,14 @@ const projectData = [
 	},
 	{
 		title: 'Pytoml',
-		description: 'Write, run and share python code right in your browser',
+		description: 'Write, run and share python code right from your browser',
 		image: '/images/pytoml.png',
 		link: 'https://pyto.ml',
 		index: -3
 	}
 ];
 
-export async function get() {
+export async function GET() {
 	return {
 		status: 200,
 		body: projectData
