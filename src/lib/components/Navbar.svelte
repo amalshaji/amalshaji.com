@@ -1,5 +1,6 @@
 <script>
 	import { theme } from '$lib/store';
+	import { slide } from 'svelte/transition';
 	import { AnimatedCounter } from '@benzara/svelte-animated-counter';
 	const names = ['Amal Shaji', 'Amalytics', 'Supreme Leader'];
 	const set_theme = () => {
@@ -132,8 +133,8 @@
 	</div>
 
 	<!-- Mobile menu, show/hide based on menu state. -->
-	<div class={navbarIsOpen ? 'sm:hidden' : 'hidden'} id="mobile-menu">
-		<div class="pt-2 pb-4 space-y-1">
+	{#if navbarIsOpen}
+		<div transition:slide={{ duration: 300 }} class="pt-2 pb-4 space-y-1">
 			<!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
 			<a
 				href="/blog"
@@ -160,5 +161,5 @@
 				>Twitter</a
 			>
 		</div>
-	</div>
+	{/if}
 </nav>
