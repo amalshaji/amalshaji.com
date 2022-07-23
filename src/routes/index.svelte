@@ -75,8 +75,8 @@
 		</div>
 	</div>
 	<div class="relative px-4 sm:px-6 lg:px-8">
-		<div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-			<p class="mt-8 text-xl text-gray-500 leading-8">Hello traveller,</p>
+		<div class="mt-6 prose prose-indigo prose-lg text-gray-900 mx-auto">
+			<p class="mt-8 text-xl text-gray-900 leading-8">Hello traveller,</p>
 			<p>
 				I'm a software engineer <strong>passionate</strong> about building cool products and
 				experimenting with new tools. My goal is to build programs/software that
