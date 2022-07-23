@@ -1,4 +1,5 @@
 <script>
+	import './infima.css';
 	import Seo from '$lib/components/SEO.svelte';
 	import Date from '$lib/components/Date.svelte';
 	import { page } from '$app/stores';
@@ -25,7 +26,6 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="/infima.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
