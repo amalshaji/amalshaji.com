@@ -120,7 +120,7 @@
 						GitHub
 					</a>
 					<a
-						href="https://twitter.com/pydantic"
+						href="https://twitter.com/amal_ytics"
 						target="_blank"
 						rel="noreferrer"
 						class="border-transparent text-gray-900 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 font-medium text-base"
@@ -154,7 +154,7 @@
 				>GitHub</a
 			>
 			<a
-				href="https://twitter.com/pydantic"
+				href="https://twitter.com/amal_ytics"
 				target="_blank"
 				rel="noreferrer"
 				class="border-transparent text-gray-900 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"

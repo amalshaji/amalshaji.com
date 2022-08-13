@@ -101,7 +101,7 @@
 					<a href="http://github.com/amalshaji">GitHub</a>
 				</li>
 				<li>
-					<a href="http://twitter.com/pydantic">Twitter</a>
+					<a href="http://twitter.com/amal_ytics">Twitter</a>
 				</li>
 			</ul>
 			<p>May the force be with you.</p>
