@@ -12,7 +12,10 @@
 	<div class="flex-1 bg-white p-6 flex flex-col justify-between">
 		<div class="flex-1">
 			<a
-				href={`/blog/${post.path.replace('.md', '').replace('.svx', '').replace('/blog/', '/')}`}
+				href={`/blog/${post.path
+					.replace('/+page.md', '')
+					.replace('/+page.svx', '')
+					.replace('/blog/', '/')}`}
 				class="block mt-2"
 			>
 				<p class="text-xl font-semibold text-gray-900">{post.metadata.title}</p>

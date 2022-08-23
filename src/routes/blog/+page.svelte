@@ -1,29 +1,9 @@
-<script context="module">
-	const allPosts = import.meta.glob('./*{md,svx}');
-
-	let body = [];
-	for (let path in allPosts) {
-		body.push(
-			allPosts[path]().then(({ metadata }) => {
-				return { path, metadata };
-			})
-		);
-	}
-	export const load = async () => {
-		const posts = await Promise.all(body);
-		posts.sort((a, b) => (a.metadata.date > b.metadata.date ? -1 : 1));
-		return {
-			props: {
-				posts
-			}
-		};
-	};
-</script>
-
 <script>
+	export let data;
+	let posts = data.posts;
+
 	import Seo from '$lib/components/SEO.svelte';
 	import BlogCardUpdated from '$lib/components/BlogCardUpdated.svelte';
-	export let posts;
 	let search = '',
 		filteredPosts = [];
 
@@ -49,21 +29,17 @@
 <section class="py-8 bg-white">
 	<div class="container px-4 mx-auto">
 		<div class="md:max-w-5xl mx-auto text-center">
-			<span
-				class="inline-block py-px px-2 mb-4 text-xs leading-5 text-indigo-500 bg-indigo-100 font-medium uppercase rounded-full shadow-sm"
-				>Blog</span
-			>
 			<h3 class="mb-8 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-semibold">
-				I write about python, svelte.
+				I love working with python, go, svelte
 			</h3>
 			<div>
 				<div class="mt-4">
 					<input
 						type="text"
-						placeholder="Search term"
+						placeholder="fastapi"
 						bind:value={search}
 						on:input={filter}
-						class="shadow-md border py-3 pl-12 w-full sm:w-1/2 mx-auto  focus:ring-indigo-500 focus:border-indigo-500 block rounded-md"
+						class="border py-3 pl-12 w-full sm:w-1/2 mx-auto block rounded-md"
 					/>
 				</div>
 			</div>

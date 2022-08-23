@@ -69,14 +69,14 @@ const projectData = [
 		title: 'Pytoml',
 		description: 'Write, run and share python code right from your browser',
 		image: '/images/pytoml.png',
-		link: 'https://pytoml.amalshaji.com/playground',
+		link: 'https://pytoml.amalshaji.com',
 		index: -3
 	}
 ];
 
-export async function GET() {
+export const load = async () => {
+	projectData.sort((a, b) => (a.index < b.index ? -1 : 1));
 	return {
-		status: 200,
-		body: projectData
+		projects: projectData
 	};
-}
+};
