@@ -1,21 +1,8 @@
-<script context="module">
-	export const prerender = true;
-	export const load = async ({ fetch }) => {
-		const res = await fetch('/projects/projects.json');
-		const projects = await res.json();
-		projects.sort((a, b) => (a.index < b.index ? -1 : 1));
-		return {
-			props: {
-				projects
-			}
-		};
-	};
-</script>
-
 <script>
 	import Seo from '$lib/components/SEO.svelte';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	export let projects;
+	export let data;
+	let projects = data.projects;
 </script>
 
 <svelte:head>
