@@ -12,8 +12,6 @@ layout: blog
 
 [Deta.sh](https://deta.sh) is a cloud platform that lets you run Python or Node applications for **free**. They also offer other products such as deta base, a NoSQL-based database, and deta drive for hosting files.
 
-> Hoping the `Golang` support comes to deta sooner. I'm a big fan of the service.
-
 Why Sapper?
 
 [Sapper](https://sapper.svelte.dev) is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. It is the predecessor of [Sveltekit](https://kit.svelte.dev/).
