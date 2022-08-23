@@ -22,7 +22,6 @@ const projectData = [
 			"FakeAPI is the predecessor of Mockend. FakeAPI let's you generate fake data by sending a JSON payload",
 		image: '/images/fakeapi.png',
 		link: 'https://fakeapi.amalshaji.com',
-		github: 'https://github.com/amalshaji/website',
 		index: 3
 	},
 	{
@@ -33,15 +32,15 @@ const projectData = [
 		github: 'https://github.com/amalshaji/ipwhere',
 		index: 6
 	},
-	{
-		title: 'Mockend',
-		description:
-			'Quickly design and generate mock backends for your frontend applications. Useful for testing/prototyping',
-		image: '/images/mockend.png',
-		link: 'https://mockend.in',
-		github: '',
-		index: 1
-	},
+	// {
+	// 	title: 'Mockend',
+	// 	description:
+	// 		'Quickly design and generate mock backends for your frontend applications. Useful for testing/prototyping',
+	// 	image: '/images/mockend.png',
+	// 	link: 'https://mockend.in',
+	// 	github: '',
+	// 	index: 1
+	// },
 	{
 		title: 'Vibe',
 		description: 'Having a bad day? Good boy doggo to the rescue. Vibe for 30 seconds!!',
@@ -59,25 +58,18 @@ const projectData = [
 		index: 0
 	},
 	{
-		title: 'UPay',
-		description: 'Generate UPI payment collect links',
-		image: '/images/upay.png',
-		link: 'https://upay.cf',
-		index: -1
-	},
-	{
 		title: 'Phoney',
 		description:
 			'Generate fake API/CSV. The API data persists, so it can be appended, updated and deleted',
 		image: '/images/phoney.png',
-		link: 'https://phoney.ml',
+		link: 'https://phoney.amalshaji.com',
 		index: -2
 	},
 	{
 		title: 'Pytoml',
 		description: 'Write, run and share python code right from your browser',
 		image: '/images/pytoml.png',
-		link: 'https://pyto.ml',
+		link: 'https://pytoml.amalshaji.com/playground',
 		index: -3
 	}
 ];
