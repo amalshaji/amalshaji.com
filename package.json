@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@benzara/svelte-animated-counter": "^0.1.0",
 		"@sveltejs/adapter-static": "^1.0.0-next.39",
-		"@sveltejs/kit": "^1.0.0-next.431",
+		"@sveltejs/kit": "^1.0.0-next.454",
 		"@tailwindcss/typography": "^0.5.4",
 		"autoprefixer": "^10.4.8",
 		"cssnano": "^5.1.13",
@@ -34,7 +34,7 @@
 		"svelte": "^3.49.0",
 		"svelte-preprocess": "^4.10.7",
 		"tailwindcss": "^3.1.8",
-		"vite": "^3.0.9"
+		"vite": "^3.1.0-beta.1"
 	},
 	"type": "module"
 }
