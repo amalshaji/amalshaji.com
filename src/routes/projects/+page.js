@@ -62,14 +62,14 @@ const projectData = [
 		description:
 			'Generate fake API/CSV. The API data persists, so it can be appended, updated and deleted',
 		image: '/images/phoney.png',
-		link: 'https://phoney.amalshaji.com',
+		link: 'https://phoney.deta.dev',
 		index: -2
 	},
 	{
 		title: 'Pytoml',
 		description: 'Write, run and share python code right from your browser',
 		image: '/images/pytoml.png',
-		link: 'https://pytoml.amalshaji.com',
+		link: 'https://pytoml.deta.dev',
 		index: -3
 	}
 ];
