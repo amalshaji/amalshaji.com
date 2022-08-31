@@ -1,20 +1,21 @@
 <script>
-	import { theme } from '$lib/store';
+	// import { theme } from '$lib/store';
 	import { slide } from 'svelte/transition';
 	import { AnimatedCounter } from '@benzara/svelte-animated-counter';
 	const names = ['Amal Shaji', 'Amalytics', 'Supreme Leader'];
-	const set_theme = () => {
-		const previous = $theme == 'dark' ? 'light' : 'dark';
-		const doc_main = document.getElementById('doc_main');
-		doc_main.classList.remove(previous);
-		doc_main.classList.add($theme);
-		localStorage.setItem('amalshaji_com_theme', $theme);
-	};
 
-	const toggle_theme = () => {
-		$theme = $theme === 'light' ? 'dark' : 'light';
-		set_theme();
-	};
+	// const set_theme = () => {
+	// 	const previous = $theme == 'dark' ? 'light' : 'dark';
+	// 	const doc_main = document.getElementById('doc_main');
+	// 	doc_main.classList.remove(previous);
+	// 	doc_main.classList.add($theme);
+	// 	localStorage.setItem('amalshaji_com_theme', $theme);
+	// };
+
+	// const toggle_theme = () => {
+	// 	$theme = $theme === 'light' ? 'dark' : 'light';
+	// 	set_theme();
+	// };
 
 	let navbarIsOpen = false;
 

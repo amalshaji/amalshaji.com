@@ -1,5 +1,5 @@
 export const load = async () => {
-	const allPosts = import.meta.glob('./**/*{md,svx}');
+	const allPosts = import.meta.glob('./**/*{md,svx}'); // eslint-disable-line
 
 	let body = [];
 	for (let path in allPosts) {
