@@ -5,7 +5,7 @@
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
 	import { prefetchRoutes } from '$app/navigation';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	let y;
 	if (browser) {
 		prefetchRoutes();
