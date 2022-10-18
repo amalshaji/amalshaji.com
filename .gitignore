@@ -7,3 +7,4 @@ node_modules
 static/feed.xml
 .pnpm-debug.log
 .vscode
+cache
