@@ -30,7 +30,7 @@
 	<div class="container px-4 mx-auto">
 		<div class="md:max-w-5xl mx-auto text-center">
 			<h3 class="mb-8 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-semibold">
-				I love working with python, go, svelte
+				I write about python, svelte and rust(?)
 			</h3>
 			<div>
 				<div class="mt-4">
@@ -39,7 +39,7 @@
 						placeholder="fastapi"
 						bind:value={search}
 						on:input={filter}
-						class="border py-3 pl-12 w-full sm:w-1/2 mx-auto block rounded-md"
+						class="border outline-none py-3 pl-4 focus:border-blue-400 duration-200 w-full sm:w-1/2 mx-auto block rounded-md"
 					/>
 				</div>
 			</div>
