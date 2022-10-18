@@ -5,7 +5,7 @@
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 
-<div class="flex flex-col rounded-lg border overflow-hidden">
+<div class="flex flex-col rounded-lg border overflow-hidden hover:border-gray-500 duration-200">
 	<div class="flex-shrink-0">
 		<img class="h-48 w-full object-cover" src={post.metadata.image} alt={post.metadata.title} />
 	</div>

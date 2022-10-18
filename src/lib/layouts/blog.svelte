@@ -34,13 +34,13 @@
 </svelte:head>
 
 {#if image}
-	<div class="relative max-w-5xl mx-auto px-4 mt-5">
-		<img alt={title} src={image} class="rounded-lg shadow-sm w-full object-contain" />
-		<div
+	<div class="max-w-5xl mx-auto px-4 mt-5">
+		<img alt={title} src={image} class="rounded-lg shadow-sm w-full object-contain z-0" />
+		<!-- <div
 			class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5"
 		>
 			<Date {date} />
-		</div>
+		</div> -->
 	</div>
 {/if}
 <div class="max-w-6xl mx-auto break-words">
@@ -48,6 +48,7 @@
 		class="prose prose-headings:font-semibold text-black dark:text-white lg:prose-lg mx-auto px-4 md:px-0 my-8 dark:prose-dark"
 	>
 		<h1>{title}</h1>
+		<p class="font-semibold text-white bg-red-500 rounded-md px-2 w-fit"><Date {date} /></p>
 		<slot />
 	</article>
 </div>

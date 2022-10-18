@@ -79,23 +79,19 @@
 			<p class="mt-8 text-xl text-gray-900 leading-8">Hello traveller,</p>
 			<p>
 				I'm a software engineer <strong>passionate</strong> about building cool products and
-				experimenting with new tools. My goal is to build programs/software that
-				<strong>serve millions</strong>. My website showcases <a href="/blog">my writings</a>
+				experimenting with new tools. My goal is to build(or be a part of) programs/software that
+				<code>serve thousands</code>. Checkout <a href="/blog">my writings</a>
 				(sharing knowledge, experiments) and <a href="/projects">side projects</a> that I do in my spare
 				time.
 			</p>
 			<p>
-				I mainly write python code. However, I also work with svelte, react, go, and rust (I don't
-				write much). I'm also interested in developer tooling (I never got a chance to build any).
+				I mainly write in python and build apps with python + svelte/htmx. I'm also interested in
+				<code>rust</code>.
 			</p>
 			<p>Feel free to contact me:</p>
 			<ul>
 				<li>
 					<a href="mailto:amalshajid@gmail.com">My Email</a>
-				</li>
-
-				<li>
-					<a href="mailto:amalshaji@proton.me">My Other Email</a>
 				</li>
 				<li>
 					<a href="http://github.com/amalshaji">GitHub</a>

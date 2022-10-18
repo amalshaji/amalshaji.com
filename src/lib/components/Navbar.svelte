@@ -2,6 +2,7 @@
 	// import { theme } from '$lib/store';
 	import { slide } from 'svelte/transition';
 	import { AnimatedCounter } from '@benzara/svelte-animated-counter';
+	import { page } from '$app/stores';
 	const names = ['Amal Shaji', 'Amalytics', 'Supreme Leader'];
 
 	// const set_theme = () => {
@@ -23,7 +24,11 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<nav class="bg-white shadow">
+<nav
+	class="bg-white shadow {$page.url.pathname.startsWith('/blog/')
+		? 'md:top-0 md:sticky z-999'
+		: ''}"
+>
 	<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 		<div class="relative flex justify-between h-16">
 			<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
