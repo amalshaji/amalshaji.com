@@ -1,15 +1,11 @@
 <script>
 	import '../app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
 	import { theme } from '$lib/store';
 	import { onMount } from 'svelte';
-	import { prefetchRoutes } from '$app/navigation';
-	import { browser } from '$app/environment';
+	import '@fontsource/inter';
+
 	let y;
-	if (browser) {
-		prefetchRoutes();
-	}
 
 	onMount(() => {
 		$theme = localStorage.getItem('amalshaji_com_theme') || 'light';
@@ -27,8 +23,10 @@
 
 <Navbar />
 
-<slot />
+<div data-sveltekit-prefetch>
+	<slot />
+</div>
 
-<Footer />
+<!-- <Footer /> -->
 
 <svelte:window bind:scrollY={y} />

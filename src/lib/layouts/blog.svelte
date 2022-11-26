@@ -4,6 +4,10 @@
 	import Date from '$lib/components/Date.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import '@fontsource/inter';
+	import '@fontsource/roboto-mono';
+	import '@fontsource/plus-jakarta-sans';
+
 	export let title, summary, image, date;
 
 	const initial_scroll = () => {
@@ -47,8 +51,10 @@
 	<article
 		class="prose prose-headings:font-semibold text-black dark:text-white lg:prose-lg mx-auto px-4 md:px-0 my-8 dark:prose-dark"
 	>
-		<h1>{title}</h1>
-		<p class="font-semibold text-white bg-red-500 rounded-md px-2 w-fit"><Date {date} /></p>
-		<slot />
+		<h1 class="text-center">{title}</h1>
+		<p class="font-semibold mx-auto text-white bg-red-500 rounded-md px-2 w-fit"><Date {date} /></p>
+		<div class="text-black text-lg leading-8 break-words md:text-xl md:leading-9">
+			<slot />
+		</div>
 	</article>
 </div>
