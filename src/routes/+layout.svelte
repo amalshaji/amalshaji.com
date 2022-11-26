@@ -23,7 +23,9 @@
 
 <Navbar />
 
-<slot />
+<div data-sveltekit-prefetch>
+	<slot />
+</div>
 
 <!-- <Footer /> -->
 
