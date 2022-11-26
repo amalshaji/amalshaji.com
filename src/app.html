@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="light" id="doc_main">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" rel="image/png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-		%sveltekit.head%
-	</head>
 
-	<body class="bg-gray-50 dark:bg-gray-800 dark:text-white">
-		<div id="svelte">%sveltekit.body%</div>
-	</body>
-	<!-- Cloudflare Web Analytics -->
-	<script
-		defer
-		src="https://static.cloudflareinsights.com/beacon.min.js"
-		data-cf-beacon='{"token": "27acd59ba0e642d29215220fde7cacfa"}'
-	></script>
-	<!-- End Cloudflare Web Analytics -->
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/favicon.png" rel="image/png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	%sveltekit.head%
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800 dark:text-white">
+	<div id="svelte">%sveltekit.body%</div>
+</body>
+<!-- Cloudflare Web Analytics -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+	data-cf-beacon='{"token": "27acd59ba0e642d29215220fde7cacfa"}'></script>
+<!-- End Cloudflare Web Analytics -->
+
 </html>
