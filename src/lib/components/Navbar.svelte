@@ -8,7 +8,7 @@
 	};
 </script>
 
-<section class="overflow-hidden">
+<section class="overflow-hidden" data-sveltekit-prefetch>
 	<div class="flex items-center justify-between px-7 xl:px-40 py-5 lg:py-7 bg-white">
 		<div class="w-auto">
 			<div class="flex flex-wrap items-center">
