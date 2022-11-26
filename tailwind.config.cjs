@@ -1,8 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
-const config = {
-	mode: 'jit',
+/** @type {import('tailwindcss').Config} */
+module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
@@ -17,7 +17,7 @@ const config = {
 				14: '3.5rem'
 			},
 			fontFamily: {
-				sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+				sans: ['Inter', ...defaultTheme.fontFamily.sans]
 			},
 			colors: {
 				primary: colors.sky,
@@ -32,21 +32,26 @@ const config = {
 							'&:hover': {
 								color: theme('colors.primary.600')
 							},
-							code: { color: theme('colors.primary.400') }
+							code: {
+								color: theme('colors.primary.400')
+							}
 						},
 						h1: {
 							fontWeight: '700',
 							letterSpacing: theme('letterSpacing.tight'),
-							color: theme('colors.gray.900')
+							color: theme('colors.gray.900'),
+							fontFamily: 'Plus Jakarta Sans'
 						},
 						h2: {
 							fontWeight: '700',
 							letterSpacing: theme('letterSpacing.tight'),
-							color: theme('colors.gray.900')
+							color: theme('colors.gray.900'),
+							fontFamily: 'Plus Jakarta Sans'
 						},
 						h3: {
 							fontWeight: '600',
-							color: theme('colors.gray.900')
+							color: theme('colors.gray.900'),
+							fontFamily: 'Plus Jakarta Sans'
 						},
 						'h4,h5,h6': {
 							color: theme('colors.gray.900')
@@ -59,7 +64,14 @@ const config = {
 							paddingTop: '2px',
 							paddingBottom: '2px',
 							borderRadius: '0.25rem',
-							wordWrap: 'break-word'
+							wordWrap: 'break-word',
+							fontWeight: '2px',
+							fontFamily: 'Roboto Mono'
+						},
+						pre: {
+							code: {
+								fontFamily: 'Roboto Mono'
+							}
 						},
 						'code:before': {
 							content: 'none'
@@ -86,7 +98,13 @@ const config = {
 						strong: { color: theme('colors.gray.600') },
 						blockquote: {
 							color: theme('colors.gray.900'),
-							borderLeftColor: theme('colors.gray.200')
+							backgroundColor: theme('colors.slate.100'),
+							borderRadius: '10px',
+							paddingLeft: '4px',
+							paddingRight: '4px',
+							paddingTop: '4px',
+							paddingBottom: '4px',
+							fontWeight: '10px'
 						}
 					}
 				},
@@ -148,5 +166,3 @@ const config = {
 	},
 	plugins: [require('@tailwindcss/typography')]
 };
-
-module.exports = config;
