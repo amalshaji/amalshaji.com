@@ -29,8 +29,8 @@
 <section class="py-8 bg-white">
 	<div class="container px-4 mx-auto">
 		<div class="md:max-w-5xl mx-auto text-center">
-			<h3 class="mb-8 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-semibold">
-				I write about python, svelte and rust(?)
+			<h3 class="mb-8 text-2xl leading-11 md:text-4xl text-darkCoolGray-900 font-normal">
+				I write about python, svelte and go
 			</h3>
 			<div>
 				<div class="mt-4">

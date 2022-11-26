@@ -6,7 +6,10 @@
 	import { onMount } from 'svelte';
 	import { prefetchRoutes } from '$app/navigation';
 	import { browser } from '$app/environment';
+	import '@fontsource/inter';
+
 	let y;
+
 	if (browser) {
 		prefetchRoutes();
 	}
@@ -29,6 +32,6 @@
 
 <slot />
 
-<Footer />
+<!-- <Footer /> -->
 
 <svelte:window bind:scrollY={y} />
