@@ -37,9 +37,43 @@ code {
 code .line::before {
 	content: counter(step);
 	counter-increment: step;
-	width: 1rem;
+	width: 0.5rem;
 	margin-right: 1.5rem;
 	display: inline-block;
 	text-align: right;
-	color: rgba(214, 243, 255, 0.4);
+	color: rgba(255, 255, 255, 0.555);
+}
+
+/*
+ Margin and rounding are personal preferences,
+ overflow-x-auto is recommended.
+*/
+pre {
+	@apply my-4 rounded overflow-x-auto;
+}
+
+/*
+   Add some vertical padding and expand the width
+   to fill its container. The horizontal padding
+   comes at the line level so that background
+   colors extend edge to edge.
+  */
+pre code {
+	@apply block py-4 min-w-max;
+}
+
+/*
+   Horizontal line padding.
+  */
+pre code .line {
+	@apply pl-1 pr-4;
+}
+
+/*
+   Push the code away from the line numbers and
+   summary caret indicators.
+  */
+pre code .line,
+pre code .summary-caret {
+	@apply mr-4;
 }
